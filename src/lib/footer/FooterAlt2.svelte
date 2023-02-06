@@ -375,7 +375,7 @@
       grid-template-columns: repeat(4, auto);
     }
   }
-  @media screen and (min-width: 880px) {
+  @media screen and (min-width: 900px) {
     .footer-container {
       grid-template-areas:
         'about customerservice products explore'
