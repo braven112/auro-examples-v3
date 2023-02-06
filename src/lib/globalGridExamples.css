@@ -1,0 +1,11 @@
+.grid-item {
+    background: var(--auro-color-brand-atlas-100);
+    text-align: center;
+    padding: 1rem;
+  }
+  .avatar-cityname,
+  .avatar-airport {
+    overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+  }

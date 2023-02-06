@@ -1,0 +1,15 @@
+:root {
+  --padding: var(--auro-size-lg);
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+      --padding: var(--auro-size-xl);
+  }
+}
+
+.mainContent {
+  display: block;
+  max-width: 1232px;
+  margin: 0 auto;
+}
