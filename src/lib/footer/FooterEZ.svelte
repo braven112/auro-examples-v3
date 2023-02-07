@@ -57,7 +57,7 @@
       <auro-hyperlink
         ondark
         nav
-        href="Canada - air travel rights"
+        href="https://www.alaskaair.com/content/legal/air-passenger-protection-regulations-canada"
         >Canada - air travel rights</auro-hyperlink
       >
       <auro-hyperlink
