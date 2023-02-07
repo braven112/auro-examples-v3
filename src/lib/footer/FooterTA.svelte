@@ -237,7 +237,6 @@
       grid-template-areas:
         'about customerservice'
         'products explore'
-        'important important'
         'social social'
         'legal legal';
       grid-template-columns: 1fr 1fr;
