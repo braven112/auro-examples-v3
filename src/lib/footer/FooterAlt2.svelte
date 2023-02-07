@@ -391,7 +391,7 @@
         'about customerservice products explore social'
         'important important important important important'
         'legal legal legal legal legal';
-      grid-template-columns: 1fr 1fr 1fr 1fr 175px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 180px;
     }
     .footer-links.important {
       grid-template-columns: 130px 145px 130px 150px;

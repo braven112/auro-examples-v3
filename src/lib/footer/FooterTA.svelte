@@ -263,7 +263,7 @@
       grid-template-areas:
         'about customerservice products explore social'
         'legal legal legal legal legal';
-      grid-template-columns: 1fr 1fr 1fr 1fr 175px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 180px;
     }
   }
 
