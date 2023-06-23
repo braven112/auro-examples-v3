@@ -1,7 +1,3 @@
-<script context="module">
-  export const prerender = true;
-</script>
-
 <script>
 import SideNavExample from "$lib/content/SideNavExample.svelte";
 
