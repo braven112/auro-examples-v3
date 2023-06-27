@@ -1,9 +1,10 @@
 <script>
   import "./Merch2.css";
+  import card from '$lib/images/stackingcards.png';
 </script>
 <article class="merch" data-variant="2">
   <picture class="merch__img">
-      <img src="/src/lib/images/stackingcards.png"  alt="">
+    <img class="imgholder" src={card} alt="Card" />
   </picture>
   <div class="merch__content">
       <p class="product__category" data-type="category">THE BETTER–THAN–EVER ALASKA VISA® CARD</p>
@@ -22,3 +23,4 @@
 <style>
 
 </style>
+      
