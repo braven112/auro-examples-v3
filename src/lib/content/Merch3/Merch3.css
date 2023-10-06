@@ -58,7 +58,7 @@
 }
 
 .merch[data-variant="3"] .product__graphic-wrapper {
-    visibility: hidden;
+    display: none;
 }
 
 .merch[data-variant="3"] .product__title-sm {
@@ -85,15 +85,14 @@
 }
 @container (min-width: 281px) {
     .merch[data-variant="3"] .product__graphic-wrapper {
-        visibility: visible;
+        display: block;
     }    
     .product__graphic-wrapper {
-        display
         position: relative;
     }
     img.product__graphic-lines {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: -2rem;
+        right: -2rem;
     }
 }

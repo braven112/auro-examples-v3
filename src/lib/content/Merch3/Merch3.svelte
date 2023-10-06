@@ -27,7 +27,9 @@
       <p class="product__fineprint-xs fineprint">Restrictions apply</p>
       <p class="product__fineprint-sm fineprint">Terms and conditions apply. Must apply here. Offers vary elsewhere.</p>
       <p class="product__fineprint-lg fineprint">Terms and conditions apply. Must apply here. Offers vary elsewhere. Offer void outside of the United States.  Must complete applicaton in English.</p>
-      <div class="product__graphic-wrapper"><img class="product__graphic-lines" src={lines} alt="lines" /></div>
+      <div class="product__graphic-wrapper">
+        <img class="product__graphic-lines" src={lines} alt="lines" />
+      </div>
   </div>
 </article>
 
