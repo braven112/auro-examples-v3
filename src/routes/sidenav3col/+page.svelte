@@ -17,4 +17,9 @@
 
 
 <SideNav3ColExample />
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
 

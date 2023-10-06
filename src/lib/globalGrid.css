@@ -1249,7 +1249,7 @@
 @media screen and (min-width: 768px) {
 	.grid-sidenav {
 		gap: var(--auro-size-md);
-		grid-template-columns: 326px auto;
+		grid-template-columns: 280px auto;
 	}
 }
 
@@ -1300,7 +1300,7 @@
 		grid-template-areas: 
 		"breadcrumbs breadcrumbs"
 		"leftsidebar content";
-		grid-template-columns: 326px auto;
+		grid-template-columns: 280px auto;
 		padding: var(--padding);
 	}
 	.leftsidebar-area {
@@ -1311,7 +1311,7 @@
 @media screen and (min-width: 1024px) {
 	.grid-sidenav {
 		gap: var(--auro-size-lg);
-		grid-template-columns: 326px auto;
+		grid-template-columns: 280px auto;
 	}
 }
 
@@ -1335,14 +1335,14 @@
 		grid-template-areas: "breadcrumbs breadcrumbs"
 		"leftsidebar rightsidebar"
 		"leftsidebar content";
-		grid-template-columns: 326px auto;
+		grid-template-columns: 280px auto;
 	}
 }
 @media screen and (min-width: 1024px) {
 	.grid-sidenav--3col {
 		grid-template-areas: "breadcrumbs breadcrumbs breadcrumbs"
 		"leftsidebar content rightsidebar";
-		grid-template-columns: 326px auto 200px;
+		grid-template-columns: 280px auto 168px;
 
 	}
 	.rightsidebar-area{
