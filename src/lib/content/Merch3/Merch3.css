@@ -1,0 +1,99 @@
+
+:root {
+    --circleSize: 4rem;
+    --circlePosition:-.5rem;
+ }
+ 
+ .merch[data-variant="3"] {
+    display: grid;
+    background-color: var(--ds-color-background-lighter);
+    border-radius: 5px;
+    overflow: hidden;
+    text-wrap: balance; /* Progressive enhancement to make text wrapping better */
+    padding: var(--ds-size-200);
+
+}
+.merch[data-variant="3"] .merch__img {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+@container (max-width: 280px) {
+    auro-avatar {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+.merch[data-variant="3"] .merch__graphics {
+    position: relative;
+}
+.merch[data-variant="3"] .product__graphic-detail {
+    position: absolute;
+    top: var(--circlePosition);
+    right: -1rem;
+}
+.merch[data-variant="3"] .product__offer-wrapper {
+    font-family: "Bebas Neue";
+    position: absolute;
+    top: var(--circlePosition);
+    left: var(--circlePosition);
+    background-color: var(--ds-color-brand-tropical-200);
+    border-radius: 50%;
+    display: inline-grid;
+    height: var(--circleSize);
+    width: var(--circleSize);
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+}
+.merch[data-variant="3"] .product__offer {
+    font-size: 1.25rem;
+}
+.merch[data-variant="3"] .product__offer-detail {
+    font-size: .75rem;
+}
+.merch[data-variant="3"] .product__title-md, .merch[data-variant="3"] .product__category, .merch[data-variant="3"] .product__title-lg, .merch[data-variant="3"] .product__cta-md, .fineprint {
+    display: none;
+}
+
+.merch[data-variant="3"] .product__graphic-wrapper {
+    visibility: hidden;
+}
+
+.merch[data-variant="3"] .product__title-sm {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--ds-color-text-emphasis-default);
+}
+@container (min-width: 200px) {
+    .merch[data-variant="3"] .product__graphic-detail {
+        position: absolute;
+        top: var(--circlePosition);
+        right: -1.5rem;
+    }
+}
+@container (min-width: 281px) {
+    .merch[data-variant="3"] {
+        grid-template-columns: min-content auto;
+        gap: 3rem;
+        background-color: var(--ds-color-background-lightest);
+        border: 3px solid var(--ds-color-background-lighter);
+    }
+
+}
+@container (min-width: 281px) {
+    .merch[data-variant="3"] .product__graphic-wrapper {
+        visibility: visible;
+    }    
+    .product__graphic-wrapper {
+        display
+        position: relative;
+    }
+    img.product__graphic-lines {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

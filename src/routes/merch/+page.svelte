@@ -5,10 +5,13 @@
 <script>
 	import Merch from '$lib/content/Merch/Merch.svelte';
 	import Merch2 from '$lib/content/Merch2/Merch2.svelte';
+	import Merch3 from '$lib/content/Merch3/Merch3.svelte';
 </script>
 
 <svelte:head>
 	<title>Merch: Demo of some of the ways to layout merchandising</title>
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
 </svelte:head>
 
 <div class="mainContent">
@@ -35,6 +38,34 @@
 
 	<h2>What am I seeing here?</h2>
 	<p>Below you will examples where one merchandising placement (and the exact same code) reshapes itself to fit in any container.</p>
+	<auro-header level="2" display="800">Variant 3 (Price Drop)</auro-header>
+  <auro-header level="2" display="400">Full width</auro-header>
+	<div class="container"><Merch3 /></div>
+  
+	 <div class="grid-3col">
+		<div class="container">
+      <auro-header level="2" display="400">Side nav</auro-header>
+      <Merch3 />
+    </div>
+		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch3 /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3 /></div>
+	</div>
+	<div class="grid-2colSideNav">
+		<div class="container"><auro-header level="2" display="400">Side nav</auro-header><Merch3 /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3 /></div>
+	</div>
+	<div class="grid-2colAnchorNav">
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3 /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3 /></div>
+	</div>
+	<div class="grid-2col5050">
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3 /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3 /></div>
+	</div>
+
+	<hr>
+
+
 	<auro-header level="2" display="800">Variant 1</auro-header>
   <auro-header level="2" display="400">Full width</auro-header>
 	<div class="container"><Merch /></div>
@@ -100,7 +131,7 @@
 	}
   @media (min-width: 1024px) {
     .grid-3col {
-      grid-template-columns: 300px auto 200px;
+      grid-template-columns: 280px auto 168px;
     }
   }
 
@@ -111,7 +142,7 @@
 	}
   @media (min-width: 768px) {
     .grid-2colSideNav {
-      grid-template-columns: 300px auto;
+      grid-template-columns: 280px auto;
     }
   }
 	.grid-2colAnchorNav {
@@ -121,7 +152,7 @@
 	}
   @media (min-width: 768px) {
     .grid-2colAnchorNav {
-      grid-template-columns: auto 200px;
+      grid-template-columns: auto 168px;
     }
   }
 	.grid-2col5050 {
@@ -149,7 +180,7 @@
 	}
 
 	.container-xs {
-		max-width: 200px;
+		max-width: 168px;
 	}
 
 	.container-sm {
