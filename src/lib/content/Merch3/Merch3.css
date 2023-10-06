@@ -73,17 +73,20 @@
         top: var(--circlePosition);
         right: -1.5rem;
     }
+    .merch[data-variant="3"] {
+        padding: var(--ds-size-400);
+    }
 }
 @container (min-width: 281px) {
     .merch[data-variant="3"] {
         grid-template-columns: min-content auto;
         gap: 3rem;
         background-color: var(--ds-color-background-lightest);
-        border: 3px solid var(--ds-color-background-lighter);
+        border: 2px solid var(--ds-color-background-lighter);
     }
 
 }
-@container (min-width: 281px) {
+@container (min-width: 600px) {
     .merch[data-variant="3"] .product__graphic-wrapper {
         display: block;
     }    
@@ -92,7 +95,7 @@
     }
     img.product__graphic-lines {
         position: absolute;
-        bottom: -2rem;
-        right: -2rem;
+        bottom: calc(-1 * var(--ds-size-800));
+        right: calc(-1 * var(--ds-size-400));
     }
 }
