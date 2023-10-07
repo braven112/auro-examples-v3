@@ -4,10 +4,10 @@
   
   <header>
 	<div class="container">
-	  <div class="flex flex-row">
+	  <div class="header-grid">
 		<auro-lockup>
 		  <span slot="title">Auro</span>
-		  <span slot="subtitle">Examples & Demos</span>
+		  <span slot="subtitle">Examples</span>
 		</auro-lockup>
 		<nav>
 		  <auro-dropdown id="common" aria-label="Label content for screen reader">
@@ -36,6 +36,12 @@
   </header>
   
   <style>
+	@media screen and (max-width: 320px) {
+		auro-lockup {
+			font-size: 10px;
+			max-width: 200px;
+		}
+	}
 	.infobar {
 	  flex: 1;
 	  align-self: center;
@@ -72,27 +78,16 @@
 	  line-height: 1.75rem;
 	  margin-left: 0.5rem;
 	}
-	auro-lockup {
-	  flex-basis: 25rem;
-	  flex-grow: 1;
-	  flex-shrink: 1;
-	}
+
 	.container {
 	  display: block;
 	  max-width: 1232px;
 	  margin: auto;
 	  padding: var(--padding);
 	}
-  
-	.flex {
-	  display: flex;
-	  flex-direction: column;
-	}
-  
-	.flex-row {
-	  flex-direction: row;
-	  align-items: flex-start;
-	  justify-content: flex-start;
+	.header-grid {
+		display: grid;
+		grid-template-columns: auto min-content;
 	}
   </style>
   

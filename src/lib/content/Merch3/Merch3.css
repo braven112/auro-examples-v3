@@ -106,7 +106,7 @@
         border: 2px solid var(--ds-color-background-lighter);
         
     }
-    .merch__content {
+    .merch[data-variant="3"] .merch__content {
         align-self: center;
     }
 }
@@ -121,7 +121,7 @@
     .product__graphic-wrapper {
         position: relative;
     }
-    img.product__graphic-lines {
+    .merch[data-variant="3"] img.product__graphic-lines {
         width: 125%;
         position: absolute;
         bottom: calc(-1 * var(--ds-size-800));
