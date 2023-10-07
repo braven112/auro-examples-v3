@@ -98,20 +98,22 @@
 
     }
 }
-@container (min-width: 450px) {
+@container (min-width: 420px) {
     .merch[data-variant="3"] {
         grid-template-columns: min-content auto;
         gap: var(--ds-size-600);
         background-color: var(--ds-color-background-lightest);
         border: 2px solid var(--ds-color-background-lighter);
+        
     }
     .merch__content {
         align-self: center;
     }
 }
-@container (min-width: 600px) {
+@container (min-width: 620px) {
     .merch[data-variant="3"] {
         background-color: var(--ds-color-background-lighter);
+        border: 2px solid var(--ds-color-background-lightest);
     }
     .merch[data-variant="3"] .product__graphic-wrapper {
         display: block;
