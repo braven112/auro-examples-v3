@@ -2,7 +2,6 @@
   import "./Merch3.css";
   import planes from '$lib/images/planes.svg';
   import lines from '$lib/images/lines.svg';
-  import "@aurodesignsystem/auro-avatar";
 </script>
 <article class="merch" data-variant="3">
   <picture class="merch__img">
