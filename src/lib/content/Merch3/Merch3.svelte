@@ -16,11 +16,13 @@
     </div>
   </picture>
   <div class="merch__content">
-      <p class="product__category" data-type="category">THE BETTER–THAN–EVER ALASKA VISA® CARD</p>
       <p class="product__title-sm" data-type="headline-sm">Hey [firstName]</p>
       <p class="product__title-md" data-type="headline-md">Hey [firstName]</p>
       <p class="product__title-lg" data-type="headline-lg">Hey [firstName]</p>
       <p class="product__bodycopy" data-type="bodycopy">A round trip flight to [XXX] is now [XX]% less.</p> 
+      <p class="product__flight-details auro_heading auro_heading--300" data-type="flight-details">Seattle, WA <sup class="airport-code">Sea</sup> <auro-icon category="interface" name="arrow-right"></auro-icon> [XXXXXX, XX] <sup class="airport-code">[XXX]</sup></p> 
+      <p class="product__flight-date" data-type="flight-date"><auro-icon category="interface" name="calendar"></auro-icon> Monday, April 1st</p> 
+      
       <auro-hyperlink class="product__cta-sm" data-type="standard" type="nav" href="https://www.alaskaair.com">Book Now ></auro-hyperlink>
       <auro-hyperlink class="product__cta-md" type="cta" href="https://www.alaskaair.com">Book Now</auro-hyperlink>
       <p class="product__fineprint-xs fineprint">Restrictions apply</p>
