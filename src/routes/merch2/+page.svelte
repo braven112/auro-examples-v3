@@ -3,9 +3,9 @@
 </script>
 
 <script>
-	import Merch from '$lib/content/Merch/Merch.svelte';
-	import Merch2 from '$lib/content/Merch2/Merch2.svelte';
-	import Merch3 from '$lib/content/Merch3/Merch3.svelte';
+	import Merch3Award from '$lib/content/Merch3/Merch3Award.svelte';
+	import Merch3Deal from '$lib/content/Merch3/Merch3Deal.svelte';
+	import Merch3Drop from '$lib/content/Merch3/Merch3Drop.svelte';
 </script>
 
 <svelte:head>
@@ -15,104 +15,88 @@
 </svelte:head>
 
 <div class="mainContent">
-    <auro-header>Auro merchandising</auro-header>
-    <p>Using container queries, one component can reshape itself into any size needed.</p>
-    <h2>The problem</h2>
-    <p>Currently, we design each merchandising placement independently. This is done because each page is designed independently, and merchandising is often an afterthought. As a result, we find some white space on the page and try to squeeze a merchandising placement there. The result is that each creative is a slightly different size and is only intended to work on the single page it was designed for.</p>
-    <h2>Solution</h2>
-	
-	<ol>
-		<li>Standardize our page layouts so we have consistent size columns across the website.</li>
-		<li>Then use the new CSS "container" queries to make slight adjustment to each potential placement so that it can reshape itself based on the space available in its given page layout.</li>
-	</ol>
-    
-    <h4>Here are a few highlights worth pointing out...</h4>
-    
-	<ul>
-		<li>Merchandising offers work <u>with</u> our new page layouts</li>
-        <li>Easily scale campaigns so that we can offer 100's of personalized offers throughout the site without designing each placement individual</li>
-		<li>Design once, use anywhere</li>
-		<li>A marketer can decide to place an ad anywhere on our site and it will just work</li>
-		<li>Gives the power back to our digital marketers</li>  
-    </ul>
-
-	<h2>What am I seeing here?</h2>
-	<p>Below you will examples where one merchandising placement (and the exact same code) reshapes itself to fit in any container.</p>
-	<auro-header level="2" display="800">Variant 3 (Price Drop)</auro-header>
+   
+	<auro-header level="2" display="800">Award Sale</auro-header>
   <auro-header level="2" display="400">Full width</auro-header>
-	<div class="container"><Merch3 /></div>
+	<div class="container"><Merch3Award /></div>
   
 	 <div class="grid-3col">
 		<div class="container">
       <auro-header level="2" display="400">Side nav</auro-header>
-      <Merch3 />
+      <Merch3Award />
     </div>
-		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch3 /></div>
-		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3 /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch3Award /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3Award /></div>
 	</div>
 	<div class="grid-2colSideNav">
-		<div class="container"><auro-header level="2" display="400">Side nav</auro-header><Merch3 /></div>
-		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3 /></div>
+		<div class="container"><auro-header level="2" display="400">Side nav</auro-header><Merch3Award /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3Award /></div>
 	</div>
 	<div class="grid-2colAnchorNav">
-		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3 /></div>
-		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3 /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3Award /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3Award /></div>
 	</div>
 	<div class="grid-2col5050">
-		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3 /></div>
-		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3 /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3Award /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3Award /></div>
 	</div>
 
 	<hr>
 
 
-	<auro-header level="2" display="800">Variant 1</auro-header>
+	<auro-header level="2" display="800">Flight Deals</auro-header>
   <auro-header level="2" display="400">Full width</auro-header>
-	<div class="container"><Merch /></div>
+	<div class="container"><Merch3Deal /></div>
   
 	<div class="grid-3col">
 		<div class="container">
       <auro-header level="2" display="400">Side nav</auro-header>
-      <Merch />
+      <Merch3Deal />
     </div>
-		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch /></div>
-		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch3Deal /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3Deal /></div>
 	</div>
 	<div class="grid-2colSideNav">
-		<div class="container"><auro-header level="2" display="400">Side nav</auro-header><Merch /></div>
-		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch /></div>
+		<div class="container"><auro-header level="2" display="400">Side nav</auro-header><Merch3Deal /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3Deal /></div>
 	</div>
 	<div class="grid-2colAnchorNav">
-		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch /></div>
-		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3Deal /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3Deal /></div>
 	</div>
 	<div class="grid-2col5050">
-		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch /></div>
-		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3Deal /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3Deal /></div>
 	</div>
 
 	<hr>
-	<auro-header level="2" display="800">Variant 2</auro-header>
-	<p>This variant features a background color and an image overlaying it.  We can add the color to our data file so it can be customized.</p>
-	<div class="container"><Merch2 /></div>
+	<auro-header level="2" display="800">Price Drop</auro-header>
+  <auro-header level="2" display="400">Full width</auro-header>
+	<div class="container"><Merch3Drop /></div>
+  
 	<div class="grid-3col">
-		<div class="container"><Merch2 /></div>
-		<div class="container"><Merch2 /></div>
-		<div class="container"><Merch2 /></div>
+		<div class="container">
+      <auro-header level="2" display="400">Side nav</auro-header>
+      <Merch3Drop />
+    </div>
+		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch3Drop /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3Drop /></div>
 	</div>
 	<div class="grid-2colSideNav">
-		<div class="container"><Merch2 /></div>
-		<div class="container"><Merch2 /></div>
+		<div class="container"><auro-header level="2" display="400">Side nav</auro-header><Merch3Drop /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3Drop /></div>
 	</div>
 	<div class="grid-2colAnchorNav">
-		<div class="container"><Merch2 /></div>
-		<div class="container"><Merch2 /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3Drop /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch3Drop /></div>
 	</div>
 	<div class="grid-2col5050">
-		<div class="container"><Merch2 /></div>
-		<div class="container"><Merch2 /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3Drop /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3Drop /></div>
 	</div>
-<hr>
+
+	<hr>
+	
 	<h2>What's next?</h2>
 	
 	<ul>

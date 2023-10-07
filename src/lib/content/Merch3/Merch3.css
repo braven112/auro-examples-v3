@@ -33,7 +33,6 @@
     right: -1rem;
 }
 .merch[data-variant="3"] .product__offer-wrapper {
-    font-family: "Bebas Neue";
     position: absolute;
     top: var(--circlePosition);
     left: var(--circlePosition);
@@ -48,10 +47,12 @@
     line-height: 1;
 }
 .merch[data-variant="3"] .product__offer {
+    font-family: "Bebas Neue";
     font-size: 1.25rem;
 }
 .merch[data-variant="3"] .product__offer-detail {
-    font-size: .75rem;
+    font-size: var(--ds-text-body-size-xs);
+    font-weight: bold;
 }
 .merch[data-variant="3"] .product__title-md, .merch[data-variant="3"] .product__category, .merch[data-variant="3"] .product__title-lg, .merch[data-variant="3"] .product__cta-md, .fineprint, .merch[data-variant="3"] .product__flight-details, .merch[data-variant="3"] .product__flight-date {
     display: none;
