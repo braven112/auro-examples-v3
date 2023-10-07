@@ -65,7 +65,6 @@
 
 	<hr>
 
-	
 
 	<auro-header level="2" display="800">Variant 1</auro-header>
   <auro-header level="2" display="400">Full width</auro-header>
