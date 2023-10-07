@@ -1,0 +1,74 @@
+ :root {
+    --imgSize: 175px;
+ }
+ .merch[data-variant="1"] {
+    display: grid;
+    background-color: var(--ds-color-background-darker);
+    color: var(--ds-color-text-primary-inverse);
+    border-radius: 5px;
+    overflow: hidden;
+    text-wrap: balance; /* Progressive enhancement to make text wrapping better */
+    padding: var(--ds-size-300);
+
+}
+.merch[data-variant="1"] .merch__img {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.merch[data-variant="1"] .product__title-md, .merch[data-variant="1"] .product__category, .merch[data-variant="1"] .product__title-lg, .merch[data-variant="1"] .product__cta-md, .fineprint, .merch[data-variant="1"] .product__flight-details, .merch[data-variant="1"] .product__flight-date {
+    display: none;
+}
+
+.merch[data-variant="1"] .product__graphic-wrapper {
+    display: none;
+}
+
+.merch[data-variant="1"] .product__title-sm, .merch[data-variant="1"] .product__title-md, .merch[data-variant="1"] .product__title-lg {
+    font-family: 'Bebas Neue';
+    font-size: var(--ds-size-300);
+    font-weight: 600;
+    line-height: 1;
+    margin-block: var(--ds-size-100);
+    text-transform: uppercase;
+    color: var(--ds-color-text-primary-inverse);
+}
+.merch[data-variant="1"] .product__bodycopy {
+    margin-block: var(--ds-size-100);
+}
+
+@container (min-width: 200px) {
+    .merch[data-variant="1"] {
+        gap: var(--ds-size-200);
+        padding: var(--ds-size-400);
+    }
+    .merch[data-variant="1"] .product__title-sm, .merch[data-variant="1"] .product__title-md, .merch[data-variant="1"] .product__title-lg {
+        font-size: var(--ds-size-400);
+    }
+}
+@container (min-width: 420px) {
+    .merch[data-variant="1"] {
+        grid-template-columns: auto max-content;
+        gap: var(--ds-size-600);
+        border: 2px solid var(--ds-color-background-darker);
+        
+    }
+    .merch[data-variant="1"] .merch__content {
+        align-self: center;
+        order: -9999;
+    }
+    .merch[data-variant="1"] .imgholder  {
+        width: calc(.8 * var(--imgSize));
+}
+}
+@container (min-width: 620px) {
+    .merch[data-variant="1"] {
+        grid-template-columns: auto var(--imgSize);
+        border: 2px solid var(--ds-color-background-darker);
+    }
+    .merch[data-variant="1"] .imgholder  {
+            width: var(--imgSize);
+    }
+}
+
