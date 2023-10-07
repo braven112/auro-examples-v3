@@ -8,8 +8,6 @@
 
 <svelte:head>
 	<title>Merch: Demo of some of the ways to layout merchandising</title>
-	<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
 </svelte:head>
 
 <div class="mainContent">
