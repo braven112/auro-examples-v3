@@ -1,0 +1,11 @@
+{
+    "fname":"Steven",
+    "lname": "Turner",
+    "origin":"Seattle, WA",
+    "originCode":"SEA",
+    "destination":"Los, Angelas, CA",
+    "destinationCode":"LAX",
+    "date":"Monday, April 1st",
+    "offer": "40%",
+    "offerDetail": "Less."    
+}

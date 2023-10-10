@@ -1,0 +1,11 @@
+{
+    "fname":"Anita",
+    "lname": "Holiday",
+    "origin":"Seattle, WA",
+    "originCode":"SEA",
+    "destination":"Honolulu, HI",
+    "destinationCode":"HNL",
+    "date":"Monday, April 1st",
+    "offer": "40K",
+    "offerDetail": "+ $6"    
+}

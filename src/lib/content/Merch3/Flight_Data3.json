@@ -1,0 +1,11 @@
+{
+    "fname":"Anita",
+    "lname": "Holiday",
+    "origin":"Seattle, WA",
+    "originCode":"SEA",
+    "destination":"Anchorage, AK",
+    "destinationCode":"ANC",
+    "date":"Monday, April 1st",
+    "offer": "$49",
+    "offerDetail": "one way"    
+}

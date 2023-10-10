@@ -1,0 +1,18 @@
+{
+    "campaignId":"XXXX",
+    "headlineSm": "Aloha Anita",
+    "headlineMd":"Aloha Anita",
+    "headlineLg":"Aloha Anita",
+    "bodyCopySm":"A flight you just searched is as low as 40K miles + $6 one way",
+    "bodyCopyMd":"A flight you just searched is as low as 40K miles + $6 one way",
+    "bodyCopyLg":"A flight you just searched is as low as 40K miles + $6 one way",
+    "ctaSm":"Explore Now >",
+    "ctaMd":"Explore Now >",
+    "ctaLg":"Explore Now >",
+    "ctaLinkSm":"https://www.alaskaair.com",
+    "ctaLinkMd":"https://www.alaskaair.com",
+    "ctaLinkLg":"https://www.alaskaair.com",
+    "fineprintSm": "Restrictions apply",
+    "fineprintMd": "Terms and conditions apply. Must apply here. Offers vary elsewhere.",
+    "fineprintLg": "Terms and conditions apply. Must apply here. Offers vary elsewhere. Offer void outside of the United States.  Must complete applicaton in English." 
+}

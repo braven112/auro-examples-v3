@@ -1,0 +1,18 @@
+{
+    "campaignId":"XXXX",
+    "headlineSm": "Hey Anita",
+    "headlineMd":"Hey Anita",
+    "headlineLg":"Hey Anita",
+    "bodyCopySm":"Your flight to <span>LAX</span> is now <span>30%</span> less.",
+    "bodyCopyMd":"A flight you just searched is as low as $49 one way",
+    "bodyCopyLg":"A flight you just searched is as low as $49 one way",
+    "ctaSm":"Book Now >",
+    "ctaMd":"Book Now >",
+    "ctaLg":"Book Now >",
+    "ctaLinkSm":"https://www.alaskaair.com",
+    "ctaLinkMd":"https://www.alaskaair.com",
+    "ctaLinkLg":"https://www.alaskaair.com",
+    "fineprintSm": "Restrictions apply",
+    "fineprintMd": "Terms and conditions apply. Must apply here. Offers vary elsewhere.",
+    "fineprintLg": "Terms and conditions apply. Must apply here. Offers vary elsewhere. Offer void outside of the United States.  Must complete applicaton in English." 
+}
