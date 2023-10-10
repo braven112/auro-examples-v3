@@ -54,7 +54,7 @@
     font-size: var(--ds-text-body-size-xs);
     font-weight: bold;
 }
-.merch[data-variant="3"] .product__title-md, .merch[data-variant="3"] .product__category, .merch[data-variant="3"] .product__title-lg, .merch[data-variant="3"] .product__cta-md, .fineprint, .merch[data-variant="3"] .product__flight-details, .merch[data-variant="3"] .product__flight-date {
+.merch[data-variant="3"] .product__category, .merch[data-variant="3"] .product__cta-md, .fineprint, .merch[data-variant="3"] .product__flight-details, .merch[data-variant="3"] .product__flight-date {
     display: none;
 }
 
@@ -62,7 +62,7 @@
     display: none;
 }
 
-.merch[data-variant="3"] .product__title-sm, .merch[data-variant="3"] .product__title-md, .merch[data-variant="3"] .product__title-lg {
+.merch[data-variant="3"] .product__title-md {
     font-family: 'Bebas Neue';
     font-size: var(--ds-size-300);
     font-weight: 600;
@@ -93,9 +93,8 @@
     .merch[data-variant="3"] {
         padding: var(--ds-size-400);
     }
-    .merch[data-variant="3"] .product__title-sm, .merch[data-variant="3"] .product__title-md, .merch[data-variant="3"] .product__title-lg {
+    .merch[data-variant="3"] .product__title-md {
         font-size: var(--ds-size-400);
-
     }
 }
 @container (min-width: 420px) {
