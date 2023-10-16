@@ -54,7 +54,7 @@
     font-size: var(--ds-text-body-size-xs);
     font-weight: bold;
 }
-.merch[data-variant="3"] .product__category, .merch[data-variant="3"] .product__cta-md, .fineprint, .merch[data-variant="3"] .product__flight-details, .merch[data-variant="3"] .product__flight-date {
+.merch[data-variant="3"] .product__category, .fineprint, .merch[data-variant="3"] .product__flight-details, .merch[data-variant="3"] .product__flight-date {
     display: none;
 }
 
