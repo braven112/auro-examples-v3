@@ -1,0 +1,144 @@
+
+:root {
+    --circleSize: 4rem;
+    --circlePosition:-.5rem;
+ }
+ 
+ .containment {
+    container: containment / inline-size;
+  }
+
+ .merch[data-variant="3"] {
+    display: grid;
+    background-color: var(--ds-color-background-lighter);
+    border-radius: 5px;
+    overflow: hidden;
+    text-wrap: balance; /* Progressive enhancement to make text wrapping better */
+    padding: var(--ds-size-200);
+
+}
+.merch[data-variant="3"] .merch__img {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.merch[data-variant="3"] .merch__graphics {
+    position: relative;
+}
+.merch[data-variant="3"] .product__graphic-detail {
+    position: absolute;
+    top: var(--circlePosition);
+    right: -1rem;
+}
+.merch[data-variant="3"] .product__offer-wrapper {
+    position: absolute;
+    top: var(--circlePosition);
+    left: var(--circlePosition);
+    background-color: var(--ds-color-brand-tropical-200);
+    border-radius: 50%;
+    display: inline-grid;
+    height: var(--circleSize);
+    width: var(--circleSize);
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+}
+.merch[data-variant="3"] .product__offer {
+    font-family: "Bebas Neue";
+    font-size: 1.25rem;
+}
+.merch[data-variant="3"] .product__offer-detail {
+    font-size: var(--ds-text-body-size-xs);
+    font-weight: bold;
+}
+.merch[data-variant="3"] .product__category, .fineprint, .merch[data-variant="3"] .product__flight-details, .merch[data-variant="3"] .product__flight-date {
+    display: none;
+}
+
+.merch[data-variant="3"] .product__graphic-wrapper {
+    display: none;
+}
+
+.merch[data-variant="3"] .product__title-md {
+    font-family: 'Bebas Neue';
+    font-size: var(--ds-size-300);
+    font-weight: 600;
+    margin-block: var(--ds-size-100);
+    text-transform: uppercase;
+    color: var(--ds-color-text-emphasis-default);
+}
+.merch[data-variant="3"] .product__bodycopy {
+    margin-block: var(--ds-size-100);
+}
+
+.merch[data-variant="3"] .airport-code {
+    color: var(--ds-color-text-secondary-default);
+    text-transform: uppercase;
+}
+
+@container containment (max-width: 280px) {
+    auro-avatar {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@container containment (min-width: 200px) {
+    .merch[data-variant="3"] {
+        gap: var(--ds-size-200);
+    }
+    .merch[data-variant="3"] .product__graphic-detail {
+        position: absolute;
+        top: var(--circlePosition);
+        right: -1.5rem;
+    }
+    .merch[data-variant="3"] {
+        padding: var(--ds-size-400);
+    }
+    .merch[data-variant="3"] .product__title-md {
+        font-size: var(--ds-size-400);
+    }
+}
+@container containment (min-width: 420px) {
+    .merch[data-variant="3"] {
+        grid-template-columns: min-content auto;
+        gap: var(--ds-size-600);
+        background-color: var(--ds-color-background-lightest);
+        border: 2px solid var(--ds-color-background-lighter);
+        
+    }
+    .merch[data-variant="3"] .merch__content {
+        align-self: center;
+    }
+}
+@container containment (min-width: 620px) {
+    .merch[data-variant="3"] {
+        background-color: var(--ds-color-background-lighter);
+        border: 2px solid var(--ds-color-background-lightest);
+    }
+    .merch[data-variant="3"] .product__graphic-wrapper {
+        display: block;
+    }    
+    .product__graphic-wrapper {
+        position: relative;
+    }
+    .merch[data-variant="3"] img.product__graphic-lines {
+        width: 125%;
+        position: absolute;
+        bottom: calc(-1 * var(--ds-size-800));
+        right: calc(-1 * var(--ds-size-400));
+    }
+    .merch[data-variant="3"] .product__flight-details {
+        display:block;
+        margin-block-start: var(--ds-size-50);
+        margin-block-end: var(--ds-size-50);
+        font-weight: bold;
+    }
+    .merch[data-variant="3"] .product__flight-date {
+        display:block;
+        margin-block-start: var(--ds-size-50);
+        font-weight: bold;
+    }
+}
+
