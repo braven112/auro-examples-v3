@@ -21,9 +21,13 @@
     </picture>
     <div class="merch__content">
         <!--Headlines-->  
-        <p class="product__title-md" data-type="headline-md">{pricedrop.headline_small} {pricedrop.pricedrop_first_name}</p>
+        <p class="product__title" data-type="headline-sm">{pricedrop.headline_small} {pricedrop.pricedrop_first_name}</p>
+        <p class="product__title" data-type="headline-md">{pricedrop.headline_medium} {pricedrop.pricedrop_first_name}</p>
+        <p class="product__title" data-type="headline-lg">{pricedrop.headline_large} {pricedrop.pricedrop_first_name}</p>
         <!--Body Copy-->
-        <p class="product__bodycopy" data-type="bodycopy">{pricedrop.body_copy_medium}</p> 
+        <p class="product__bodycopy" data-type="bodycopy-sm">{pricedrop.body_copy_small}</p> 
+        <p class="product__bodycopy" data-type="bodycopy-md">{pricedrop.body_copy_medium}</p> 
+        <p class="product__bodycopy" data-type="bodycopy-lg">{pricedrop.body_copy_large}</p> 
         <p class="product__flight-details auro_heading auro_heading--300" data-type="flight-details">
           {pricedrop.pricedrop_origin_city} 
           <sup class="airport-code">{pricedrop.pricedrop_origin}</sup> 
@@ -41,9 +45,11 @@
         <p class="product__fineprint-md fineprint">{pricedrop.fineprint_medium}</p>
         <p class="product__fineprint-lg fineprint">{pricedrop.fineprint_large}</p>
         <!--Design Element-->
-        <div class="product__graphic-wrapper">
+        <!-- <div class="product__graphic-wrapper">
           <img class="product__graphic-lines" src={lines} alt="lines" />
-        </div>
+        </div> -->
     </div>
   </article>
 </div>
+
+

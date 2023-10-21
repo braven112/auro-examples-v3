@@ -15,7 +15,6 @@
     overflow: hidden;
     text-wrap: balance; /* Progressive enhancement to make text wrapping better */
     padding: var(--ds-size-200);
-
 }
 .merch[data-variant="3"] .merch__img {
     display: grid;
@@ -60,7 +59,8 @@
     display: none;
 }
 
-.merch[data-variant="3"] .product__title-md {
+.merch[data-variant="3"] .product__title {
+    display: none;
     font-family: 'Bebas Neue';
     font-size: var(--ds-size-300);
     font-weight: 600;
@@ -69,6 +69,7 @@
     color: var(--ds-color-text-emphasis-default);
 }
 .merch[data-variant="3"] .product__bodycopy {
+    display: none;
     margin-block: var(--ds-size-100);
 }
 
@@ -77,6 +78,13 @@
     text-transform: uppercase;
 }
 
+.merch[data-variant="3"] [data-type="headline-sm"],
+.merch[data-variant="3"] [data-type="bodycopy-sm"] {
+    display: block;
+}
+
+
+
 @container containment (max-width: 280px) {
     auro-avatar {
         width: 8rem;
@@ -84,6 +92,7 @@
     }
 }
 
+/* Small */
 @container containment (min-width: 200px) {
     .merch[data-variant="3"] {
         gap: var(--ds-size-200);
@@ -96,26 +105,55 @@
     .merch[data-variant="3"] {
         padding: var(--ds-size-400);
     }
-    .merch[data-variant="3"] .product__title-md {
+    .merch[data-variant="3"] .product__title {
         font-size: var(--ds-size-400);
     }
+    .merch[data-variant="3"] [data-type="bodycopy-md"],
+    .merch[data-variant="3"] [data-type="bodycopy-lg"],
+    .merch[data-variant="3"] [data-type="headline-md"],
+    .merch[data-variant="3"] [data-type="headline-lg"] {
+        display: none;
+    }
+    .merch[data-variant="3"] [data-type="bodycopy-sm"],
+    .merch[data-variant="3"] [data-type="headline-sm"] {
+        display: block;
+    }
+
 }
+
+/* Medium */
 @container containment (min-width: 420px) {
     .merch[data-variant="3"] {
         grid-template-columns: min-content auto;
         gap: var(--ds-size-600);
         background-color: var(--ds-color-background-lightest);
         border: 2px solid var(--ds-color-background-lighter);
-        
+        background-size: contain;
+        background-position: 100% 0px;
     }
     .merch[data-variant="3"] .merch__content {
         align-self: center;
     }
+    .merch[data-variant="3"] [data-type="bodycopy-sm"],
+    .merch[data-variant="3"] [data-type="bodycopy-lg"],
+    .merch[data-variant="3"] [data-type="headline-sm"],
+    .merch[data-variant="3"] [data-type="headline-lg"] {
+        display: none;
+    }
+    .merch[data-variant="3"] [data-type="bodycopy-md"],
+    .merch[data-variant="3"] [data-type="headline-md"] {
+        display: block;
+    }
 }
+/* Large */
 @container containment (min-width: 620px) {
     .merch[data-variant="3"] {
         background-color: var(--ds-color-background-lighter);
         border: 2px solid var(--ds-color-background-lightest);
+        background-image: url('https://sitecore-prod-cd-westus2.azurewebsites.net/-/media/Images/testing/test-only/lines');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 0px;
     }
     .merch[data-variant="3"] .product__graphic-wrapper {
         display: block;
@@ -139,6 +177,16 @@
         display:block;
         margin-block-start: var(--ds-size-50);
         font-weight: bold;
+    }
+    .merch[data-variant="3"] [data-type="bodycopy-sm"],
+    .merch[data-variant="3"] [data-type="bodycopy-md"],
+    .merch[data-variant="3"] [data-type="headline-sm"],
+    .merch[data-variant="3"] [data-type="headline-md"] {
+        display: none;
+    }
+    .merch[data-variant="3"] [data-type="bodycopy-lg"],
+    .merch[data-variant="3"] [data-type="headline-lg"] {
+        display: block;
     }
 }
 
