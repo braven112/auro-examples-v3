@@ -16,22 +16,19 @@
     overflow: hidden;
     text-wrap: balance;
     padding: var(--ds-size-200);
+    display: grid;
+    gap: var(--ds-size-200);
+    align-content: center;
+    grid-template-columns: 70px auto;
 }
 
-.merchAlert[data-variant="3"] .merch__graphics {
-    position: relative;
-    display: none;
+.merchAlert[data-variant="3"] .merch__img {
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    max-height: 6rem;
 }
 
-.merchAlert[data-variant="3"] .product__graphic-wrapper {
-    position: relative;
-}
-
-.merchAlert[data-variant="3"] img.product__graphic-lines {
-    position: absolute;
-    top: -3rem;
-    right: -1rem;
-}
 .merchAlert[data-variant="3"] auro-icon {
     display: none;
 }
@@ -46,43 +43,28 @@
         background-size: 60%;
     }
 
-    .merchAlert[data-variant="3"] .merch__graphics {
-        display: block;
-    }
     .merchAlert[data-variant="3"] auro-avatar {
-        position: absolute;
-        display: block;
         width: 12rem;
         height: 12rem;
-        left: -13rem;
-        top: -4rem;
     }
     .merchAlert[data-variant="3"] {
         padding: var(--ds-size-200);
-        padding-left: calc(2 * var(--ds-size-800));
     }
 }
 
-@container (min-width: 400px) {
+@container (min-width: 465px) {
     .merchAlert[data-variant="3"] {
-        background-size: 30%;
+        background-size: 0%;
+        max-height: var(--ds-size-1000);
+        align-content: center;
     }
     .merchAlert[data-variant="3"] auro-icon {
         display: inline-block;
     }
-    .merchAlert[data-variant="3"] {
-        display: grid;
-        max-height: var(--ds-size-1000);
-        grid-template-columns: 10rem auto;
-        padding-left: var(--ds-size-200);
-    }
+
     .merchAlert[data-variant="3"] auro-avatar {
-        position: absolute;
-        display: block;
         width: 12rem;
         height: 12rem;
-        left: -8rem;
-        top: -6rem;
     }
 
     .merchAlert[data-variant="3"] .merch__content {
@@ -90,12 +72,6 @@
         grid-template-columns: max-content 100px;
         align-items: center;
         gap: var(--ds-size-300);
-    }
-
-    .merchAlert[data-variant="3"] .merch__img {
-        display: grid;
-        justify-content: center;
-        align-content: center;
     }
 
     .merchAlert[data-variant="3"] .product__title-sm {
@@ -109,28 +85,16 @@
 
     .merchAlert[data-variant="3"] .product__bodycopy-sm {
         margin-block: var(--ds-size-100);
-    }
-
-
-    .merchAlert[data-variant="3"] .merch__graphics {
-        position: relative;
-    }
-    
-}
-@container (min-width: 500px) {
-    .merchAlert[data-variant="3"] {
-        background-size: 0%;
-    }
+    }    
 }
 
 @container (min-width: 580px) {
     .merchAlert[data-variant="3"] {
         background-size: 0%;
-        grid-template-columns:8rem auto;
+        grid-template-columns: 120px auto;
     }
-    .merchAlert[data-variant="3"] auro-avatar {
-        left: -9rem;
-    }
+}
+@container (min-width: 700px) {  
     .merchAlert[data-variant="3"] .product__bodycopy-md {
         display: block;
         margin-block: var(--ds-size-100);
@@ -140,23 +104,11 @@
         display: none;
     }
 }
-@container (min-width: 700px) {
-    .merchAlert[data-variant="3"] {
-        background-size: 40%;
-        grid-template-columns: 13rem auto;
-    }       
-    .merchAlert[data-variant="3"] auro-avatar {
-        left: -8rem;
-    } 
-}
-@container (min-width: 800px) {
 
-}
-
-@container (min-width: 1000px) {
+@container (min-width: 960px) {
     .merchAlert[data-variant="3"] {
-        background-size: 45%;
-        grid-template-columns: 13rem auto;
+        background-size: 30%;
+        grid-template-columns: 10rem auto;
     }   
     .merchAlert[data-variant="3"] .product__bodycopy-lg {
         display: block;
