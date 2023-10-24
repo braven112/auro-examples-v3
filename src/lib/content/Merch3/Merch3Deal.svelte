@@ -5,6 +5,7 @@
   import campaign from './Campaign_Data3.json';
   import flight from './Flight_Data3.json';
 </script>
+<div class="merch-container">
 <article class="merch" data-variant="3">
   <picture class="merch__img">
     <div class="merch__graphics">
@@ -37,4 +38,4 @@
       </div>
   </div>
 </article>
-      
+      </div>

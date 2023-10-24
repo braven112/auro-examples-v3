@@ -3,7 +3,8 @@
 </script>
 
 <script>
-	import Merch1 from '$lib/content/Merch1/Merch1.svelte';
+	import Merch3Alert from '$lib/content/Merch3Alert/Merch3Alert.svelte'
+	import Merch3AlertDeal from '$lib/content/Merch3Alert/Merch3AlertDeal.svelte';
 </script>
 
 <svelte:head>
@@ -12,31 +13,65 @@
 
 <div class="mainContent">
     
-	<h2>What am I seeing here?</h2>
-	<p>Below you will examples where one merchandising placement (and the exact same code) reshapes itself to fit in any container.</p>
-	<auro-header level="2" display="800">Variant 1</auro-header>
+	<auro-header level="2" display="800">Merch Alert Component</auro-header>
+	<p>The Deal Alert Component is intended to be a single line alert showing either a price drop, flight deal or an award sale.  Its intended to be used in a full width page or in the main column of a page on mobile or desktop.</p>
+	<auro-header level="3" display="600">Price Drop</auro-header>
   <auro-header level="2" display="400">Full width</auro-header>
-	<div class="container"><Merch1 /></div>
+	<div class="container"><Merch3Alert /></div>
   
 	<div class="grid-3col">
 		<div class="container">
       <auro-header level="2" display="400">Side nav</auro-header>
-      <Merch1 />
     </div>
-		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch1 /></div>
-		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch1 /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch3Alert /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header></div>
 	</div>
 	<div class="grid-2colSideNav">
-		<div class="container"><auro-header level="2" display="400">Side nav</auro-header><Merch1 /></div>
-		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch1 /></div>
+		<div class="container"><auro-header level="2" display="400">Side nav</auro-header></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3Alert /></div>
 	</div>
 	<div class="grid-2colAnchorNav">
-		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch1 /></div>
-		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch1 /></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3Alert /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header></div>
 	</div>
 	<div class="grid-2col5050">
-		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch1 /></div>
-		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch1 /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3Alert /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3Alert /></div>
+	</div>
+	<div class="grid-phones">
+		<div class="container"><auro-header level="2" display="400">iPhone Mini</auro-header><Merch3Alert /></div>
+		<div class="container"><auro-header level="2" display="400">Galaxy </auro-header><Merch3Alert /></div>
+		<div class="container"><auro-header level="2" display="400">iPhone XR</auro-header><p><Merch3Alert /></p></div>
+	</div>
+
+	<hr>
+	<auro-header level="2" display="800">Deal - Alert</auro-header>
+  <auro-header level="2" display="400">Full width</auro-header>
+	<div class="container"><Merch3AlertDeal /></div>
+  
+	<div class="grid-3col">
+		<div class="container">
+			<auro-header level="2" display="400">Side nav</auro-header>
+		</div>
+		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch3AlertDeal /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header></div>
+	</div>
+	<div class="grid-2colSideNav">
+		<div class="container"><auro-header level="2" display="400">Side nav</auro-header></div>
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3AlertDeal /></div>
+	</div>
+	<div class="grid-2colAnchorNav">
+		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch3AlertDeal /></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header></div>
+	</div>
+	<div class="grid-2col5050">
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3AlertDeal /></div>
+		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch3AlertDeal /></div>
+	</div>
+	<div class="grid-phones">
+		<div class="container"><auro-header level="2" display="400">iPhone Mini</auro-header><Merch3AlertDeal /></div>
+		<div class="container"><auro-header level="2" display="400">Galaxy </auro-header><Merch3AlertDeal /></div>
+		<div class="container"><auro-header level="2" display="400">iPhone XR</auro-header><Merch3AlertDeal /></div>
 	</div>
 
 	<hr>
@@ -52,12 +87,23 @@
 </div>
 
 <style>
+	.grid-phones {
+		display: none;
+		background-color: var(--ds-color-background-lighter);
+	}
 	.grid-3col {
 		display: grid;
 		gap: 1rem;
 		margin-top: 4rem;
 	}
   @media (min-width: 1024px) {
+	.grid-phones {
+		display: grid;
+		gap: 2rem;
+		margin-top: 4rem;
+		grid-template-columns: 320px 360px 375px;
+		padding: var(--ds-size-300);
+	}
     .grid-3col {
       grid-template-columns: 280px auto 168px;
     }
@@ -102,37 +148,6 @@
 	}
 	.container {
 		container-type: inline-size;
-	}
-	.container-xxs {
-		max-width: 140px;
-	}
-
-	.container-xs {
-		max-width: 168px;
-	}
-
-	.container-sm {
-		max-width: 360px;
-	}
-
-	.container-md {
-		max-width: 500px;
-	}
-
-	.container-lg {
-		max-width: 700px;
-	}
-
-	.container-xl {
-		max-width: 900px;
-	}
-
-	.container-xxl {
-		max-width: 1000px;
-	}
-
-	.container-xxxl {
-		max-width: 1232px;
 	}
 	hr {
 		border: .5px dashed #eee;

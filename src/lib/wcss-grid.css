@@ -1,0 +1,1273 @@
+/* --------start variables import ------------- */
+/* --------end variables import ------------- */
+/* --------start breakpoints import ------------- */
+/* --------start grids import ------------- */
+.container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1232px;
+  }
+  
+  .pagecontainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1232px;
+  }
+  @media screen and (min-width: 576px) {
+    .pagecontainer {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pagecontainer {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pagecontainer {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .pagecontainer {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  .pagecontainer.breadcrumbs {
+    margin-block-end: 3.35rem;
+  }
+  
+  .pageLayout-2colAnchorNav {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1232px;
+    gap: 2rem;
+    grid-template-areas: "breadcrumbs" "anchornav" "main";
+  }
+  @media screen and (min-width: 576px) {
+    .pageLayout-2colAnchorNav {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-2colAnchorNav {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-2colAnchorNav {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .pageLayout-2colAnchorNav {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .pageLayout-2colAnchorNav {
+      gap: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-2colAnchorNav {
+      gap: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-2colAnchorNav {
+      gap: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .pageLayout-2colAnchorNav {
+      gap: 2rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-2colAnchorNav {
+      grid-template-columns: auto 168px;
+      grid-template-areas: "breadcrumbs breadcrumbs" "main anchornav";
+    }
+  }
+  .pageLayout-2colAnchorNav .breadcrumbs {
+    grid-area: breadcrumbs;
+  }
+  .pageLayout-2colAnchorNav .main {
+    grid-area: main;
+  }
+  .pageLayout-2colAnchorNav .main * {
+    scroll-margin-top: 1.5rem;
+  }
+  .pageLayout-2colAnchorNav .anchornav {
+    grid-area: anchornav;
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-2colAnchorNav .anchornav {
+      position: sticky;
+      top: 0;
+      max-height: 100vh;
+      padding-top: 2rem;
+    }
+  }
+  
+  .pageLayout-2colSideNav {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1232px;
+    gap: 2rem;
+    grid-template-areas: "breadcrumbs" "sidenav" "main";
+  }
+  @media screen and (min-width: 576px) {
+    .pageLayout-2colSideNav {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-2colSideNav {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-2colSideNav {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .pageLayout-2colSideNav {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .pageLayout-2colSideNav {
+      gap: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-2colSideNav {
+      gap: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-2colSideNav {
+      gap: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .pageLayout-2colSideNav {
+      gap: 2rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-2colSideNav {
+      grid-template-columns: 268px auto;
+      grid-template-areas: "breadcrumbs breadcrumbs" "sidenav main";
+    }
+  }
+  .pageLayout-2colSideNav .breadcrumbs {
+    grid-area: breadcrumbs;
+  }
+  .pageLayout-2colSideNav .sidenav {
+    grid-area: sidenav;
+  }
+  .pageLayout-2colSideNav .main {
+    grid-area: main;
+  }
+  .pageLayout-2colSideNav .main * {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  .pageLayout-3col {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    max-width: 1232px;
+    gap: 2rem;
+    grid-template-areas: "breadcrumbs" "sidenav" "anchornav" "main";
+  }
+  @media screen and (min-width: 576px) {
+    .pageLayout-3col {
+      padding: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-3col {
+      padding: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-3col {
+      padding: 2rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .pageLayout-3col {
+      padding: 2rem;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .pageLayout-3col {
+      gap: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-3col {
+      gap: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-3col {
+      gap: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .pageLayout-3col {
+      gap: 2rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-3col {
+      grid-template-columns: 268px auto 168px;
+      grid-template-areas: "breadcrumbs breadcrumbs breadcrumbs" "sidenav main anchornav";
+    }
+  }
+  .pageLayout-3col .breadcrumbs {
+    grid-area: breadcrumbs;
+  }
+  .pageLayout-3col .sidenav {
+    grid-area: sidenav;
+  }
+  .pageLayout-3col .main {
+    grid-area: main;
+    max-width: 1232px;
+  }
+  .pageLayout-3col .main * {
+    scroll-margin-top: 1.5rem;
+  }
+  .pageLayout-3col .anchornav {
+    grid-area: anchornav;
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-3col .anchornav {
+      position: sticky;
+      top: 0;
+      max-height: 100vh;
+      padding-top: 2rem;
+    }
+  }
+  
+  .pageLayout-3colFullWidth {
+    display: grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 2rem;
+    grid-template-areas: "breadcrumbs" "sidenav" "anchornav" "main";
+    justify-content: center;
+  }
+  @media screen and (min-width: 576px) {
+    .pageLayout-3colFullWidth {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-3colFullWidth {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-3colFullWidth {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .pageLayout-3colFullWidth {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .pageLayout-3colFullWidth {
+      gap: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pageLayout-3colFullWidth {
+      gap: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-3colFullWidth {
+      gap: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .pageLayout-3colFullWidth {
+      gap: 2rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-3colFullWidth {
+      grid-template-columns: minmax(268px, 300px) minmax(auto, 1168px) minmax(268px, 300px);
+      grid-template-areas: "sidenav breadcrumbs anchornav" "sidenav main anchornav";
+    }
+  }
+  .pageLayout-3colFullWidth .breadcrumbs {
+    grid-area: breadcrumbs;
+  }
+  .pageLayout-3colFullWidth .sidenav {
+    grid-area: sidenav;
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-3colFullWidth .sidenav {
+      position: sticky;
+      top: 0;
+      max-height: 100vh;
+      padding-top: 2rem;
+      top: 124px;
+      height: calc(100vh - 124px);
+    }
+  }
+  .pageLayout-3colFullWidth .main {
+    grid-area: main;
+  }
+  .pageLayout-3colFullWidth .main * {
+    scroll-margin-top: 1.5rem;
+  }
+  .pageLayout-3colFullWidth .anchornav {
+    grid-area: anchornav;
+  }
+  @media screen and (min-width: 1024px) {
+    .pageLayout-3colFullWidth .anchornav {
+      position: sticky;
+      top: 0;
+      max-height: 100vh;
+      padding-top: 2rem;
+      top: 124px;
+      height: calc(100vh - 124px);
+    }
+  }
+  
+  /* --------start fonts import ------------- */
+  @font-face {
+    font-family: "AS Circular";
+    font-weight: 100;
+    font-style: normal;
+    font-display: fallback;
+    src: url("https://resource.alaskaair.net/-/media/4E8D77C0D7A8411AB9C351C1EFF86681.woff2") format("woff2"), url("https://resource.alaskaair.net/-/media/CAAEEC88586944808EDE9B36A3460098.woff") format("woff");
+  }
+  @font-face {
+    font-family: "AS Circular";
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+    src: url("https://resource.alaskaair.net/-/media/A5558137DB0F4B818D85EBE44FDC542E.woff2") format("woff2"), url("https://resource.alaskaair.net/-/media/F4E82B6C6CBA46B4A322B4B99B2CBC63.woff") format("woff");
+  }
+  @font-face {
+    font-family: "AS Circular";
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+    src: url("https://resource.alaskaair.net/-/media/1DD02F55437F4346B7EF7D5A08326D71.woff2") format("woff2"), url("https://resource.alaskaair.net/-/media/2339807B68A344348447336D15035425.woff") format("woff");
+  }
+  /* --------start normalize import ------------- */
+  /* Document
+     ========================================================================== */
+  html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  main {
+    display: block;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  hr {
+    overflow: visible; /* 1 */
+    box-sizing: content-box; /* 2 */
+    height: 0; /* 2 */
+  }
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */ /* stylelint-disable-line font-family-no-duplicate-names */
+    font-size: 1rem; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  a {
+    background-color: transparent;
+  }
+  
+  abbr[title] {
+    text-decoration: underline; /* 1 */
+    text-decoration: underline dotted; /* 1 */ /* stylelint-disable-line declaration-block-no-duplicate-properties */
+    border-bottom: none; /* 2 */
+  }
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */ /* stylelint-disable-line font-family-no-duplicate-names */
+    font-size: 1rem; /* 2 */
+  }
+  
+  sub,
+  sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin: 0; /* 1 */
+    font-family: inherit; /* 2 */
+    font-size: 100%; /* 2 */
+    line-height: 1.5rem; /* 2 */
+  }
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  button,
+  [type=button],
+  [type=reset],
+  [type=submit] {
+    -webkit-appearance: none;
+  }
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  legend {
+    display: table; /* 1 */
+    box-sizing: border-box; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 2 */
+    white-space: normal; /* 1 */
+    color: inherit; /* 3 */
+  }
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  [type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  [type=search] {
+    outline-offset: -2px; /* 1 */
+    -webkit-appearance: textfield; /* 2 */
+  }
+  
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  ::-webkit-file-upload-button {
+    font: inherit; /* 1 */
+    -webkit-appearance: button; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  details {
+    display: block;
+  }
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  template {
+    display: none;
+  }
+  
+  [hidden] {
+    display: none;
+  }
+  
+  /* --------start essentials import ------------- */
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *:before, *:after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  *:focus-visible {
+    outline: 0;
+  }
+  *:focus-visible {
+    outline: 0;
+  }
+  
+  :focus:not(:focus-visible) {
+    outline: 3px solid transparent;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 1rem;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body,
+  .baseType {
+    margin: 0;
+    color: #222222;
+    font-family: "AS Circular", Helvetica Neue, Arial, sans-serif;
+    font-variant-ligatures: no-common-ligatures;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+  
+  .baseParagraph {
+    margin: 0 0 1rem;
+    line-height: 1.5rem;
+  }
+  .baseParagraph .hyperlink {
+    text-decoration: underline;
+  }
+  
+  .hyperlink {
+    text-decoration: underline;
+    color: #0074c8;
+  }
+  .hyperlink:visited {
+    color: #0074c8;
+  }
+  .hyperlink--nav {
+    display: block;
+    text-decoration: none;
+  }
+  .hyperlink--nav:not(.is-touching):hover {
+    text-decoration: underline !important;
+  }
+  .hyperlink--ondark {
+    color: #00cff0;
+  }
+  .hyperlink--ondark:not(.is-touching):hover {
+    color: #5de3f7;
+  }
+  .hyperlink--ondark:visited {
+    color: #00cff0;
+  }
+  .hyperlink:not(.is-touching):hover {
+    text-decoration: none;
+    color: #054687;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  small,
+  .type--small {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  /* stylelint-disable-line scss/dollar-variable-first-in-block */
+  .fineprint {
+    font-family: var(--auro-font-family-default);
+    font-size: var(--auro-text-body-size-xs);
+    line-height: var(--auro-text-body-height-xs);
+    color: var(--auro-color-text-secondary-on-light);
+  }
+  
+  /* --------start headings import ------------- */
+  .heading {
+    margin: calc(1rem + 0.75rem) 0;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+  }
+  
+  .heading--display {
+    margin-top: 0;
+    font-size: 2.75rem;
+    font-weight: 100;
+    line-height: 3.375rem;
+  }
+  @media screen and (min-width: 1024px) {
+    .heading--display {
+      font-size: 3rem;
+      line-height: 3.75rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .heading--display {
+      font-size: 3.5rem;
+      line-height: 4.25rem;
+    }
+  }
+  
+  .heading--800 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.375rem;
+  }
+  @media screen and (min-width: 1024px) {
+    .heading--800 {
+      font-size: 2.25rem;
+      line-height: 2.625rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .heading--800 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  }
+  
+  .heading--700 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2.125rem;
+  }
+  @media screen and (min-width: 1024px) {
+    .heading--700 {
+      font-size: 2rem;
+      line-height: 2.375rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .heading--700 {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+    }
+  }
+  
+  .heading--600 {
+    margin: 1rem 0;
+    font-size: 1.625rem;
+    font-weight: 300;
+    line-height: 1.875rem;
+  }
+  @media screen and (min-width: 1024px) {
+    .heading--600 {
+      font-size: 1.75rem;
+      line-height: 2.125rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .heading--600 {
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+    }
+  }
+  
+  .heading--500 {
+    margin: 1rem 0;
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.625rem;
+  }
+  @media screen and (min-width: 1024px) {
+    .heading--500 {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+    }
+  }
+  @media screen and (min-width: 1232px) {
+    .heading--500 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+  
+  .heading--400 {
+    margin: 0.75rem 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.625rem;
+  }
+  
+  .heading--300 {
+    margin: 0.75rem 0;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.625rem;
+  }
+  
+  /* --------start utility/Classes import ------------- */
+  @media screen and (min-width: 660px) {
+    .util_is-smOnly {
+      display: none;
+    }
+  }
+  
+  .util_is-mdOnly {
+    display: none;
+  }
+  @media screen and (min-width: 660px) {
+    .util_is-mdOnly {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .util_is-mdOnly {
+      display: none;
+    }
+  }
+  
+  .util_is-mdOnly--inline {
+    display: none;
+  }
+  @media screen and (min-width: 660px) {
+    .util_is-mdOnly--inline {
+      display: inline-block;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .util_is-mdOnly--inline {
+      display: none;
+    }
+  }
+  
+  .util_is-mdAppears {
+    display: none;
+  }
+  @media screen and (min-width: 660px) {
+    .util_is-mdAppears {
+      display: block;
+    }
+  }
+  
+  .util_is-mdAppears--inline {
+    display: none;
+  }
+  @media screen and (min-width: 660px) {
+    .util_is-mdAppears--inline {
+      display: inline-block;
+    }
+  }
+  
+  .util_is-lgOnly {
+    display: none;
+  }
+  @media screen and (min-width: 1232px) {
+    .util_is-lgOnly {
+      display: block;
+    }
+  }
+  
+  .util_is-lgOnly--inline {
+    display: none;
+  }
+  @media screen and (min-width: 1232px) {
+    .util_is-lgOnly--inline {
+      display: inline-block;
+    }
+  }
+  
+  .util_img-is-responsive {
+    width: 100%;
+  }
+  
+  .util_displayInline {
+    display: inline;
+  }
+  
+  .util_displayInlineBlock {
+    display: inline-block;
+  }
+  
+  .util_displayBlock {
+    display: block;
+  }
+  
+  .util_displayFlex {
+    display: flex;
+  }
+  
+  .util_displayHidden {
+    display: none;
+  }
+  
+  .util_displayHiddenVisually {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+  }
+  
+  .util_fontWeightDefault {
+    font-weight: 500;
+  }
+  
+  .util_fontWeightMedium {
+    font-weight: 300;
+  }
+  
+  .util_fontWeightDisplay {
+    font-weight: 100;
+  }
+  
+  .util_body--lg {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  
+  .util_body--sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .util_body--xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .util_floatLeft {
+    float: left;
+  }
+  
+  .util_floatRight {
+    float: right;
+  }
+  
+  .util_margin--auto {
+    margin: 0 auto;
+  }
+  
+  .util_listUnstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .util_listNoIndent {
+    padding-left: 0;
+    list-style: none;
+  }
+  .util_listNoIndent li::before {
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><circle cx='3' cy='5' r='2.75'></circle></svg>");
+    display: inline-block;
+    width: var(--auro-size-300);
+  }
+  
+  .util_listIndented {
+    padding-left: 0;
+    list-style: none;
+    margin-left: calc(var(--auro-size-300) + var(--auro-size-50));
+  }
+  .util_listIndented li::before {
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><circle cx='3' cy='5' r='2.75'></circle></svg>");
+    display: inline-block;
+    width: var(--auro-size-300);
+  }
+  
+  .util_listNoIndentOrdered {
+    padding-left: 0;
+    list-style: none;
+    counter-reset: li-counter;
+  }
+  .util_listNoIndentOrdered li::before {
+    counter-increment: li-counter;
+    content: counter(li-counter) ".";
+    width: var(--auro-size-300);
+    display: inline-block;
+  }
+  
+  .util_listIndentedOrdered {
+    padding-left: calc(var(--auro-size-300) + var(--auro-size-50));
+    list-style: none;
+    counter-reset: li-counter;
+  }
+  .util_listIndentedOrdered li::before {
+    counter-increment: li-counter;
+    content: counter(li-counter) ".";
+    width: var(--auro-size-300);
+    display: inline-block;
+  }
+  
+  .util_listAuroIcon {
+    padding-left: calc(var(--auro-size-300) + var(--auro-size-50));
+    list-style: none;
+  }
+  .util_listAuroIcon li {
+    text-indent: calc(var(--auro-size-200) * -1);
+  }
+  .util_listAuroIcon auro-icon {
+    width: var(--auro-size-200);
+  }
+  
+  /* --------start utilityClasses/displayProps import ------------- */
+  .util_displayInline {
+    display: inline;
+  }
+  
+  .util_displayInlineBlock {
+    display: inline-block;
+  }
+  
+  .util_displayBlock {
+    display: block;
+  }
+  
+  .util_displayFlex {
+    display: flex;
+  }
+  
+  .util_displayHidden {
+    display: none;
+  }
+  
+  .util_displayHiddenVisually {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+  }
+  
+  /* --------start utilityClasses/fontStyles import ------------- */
+  .util_fontWeightDefault {
+    font-weight: 500;
+  }
+  
+  .util_fontWeightMedium {
+    font-weight: 300;
+  }
+  
+  .util_fontWeightDisplay {
+    font-weight: 100;
+  }
+  
+  .util_body--lg {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  
+  .util_body--sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .util_body--xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  /* --------start utilityClasses/responsive import ------------- */
+  @media screen and (min-width: 660px) {
+    .util_is-smOnly {
+      display: none;
+    }
+  }
+  
+  .util_is-mdOnly {
+    display: none;
+  }
+  @media screen and (min-width: 660px) {
+    .util_is-mdOnly {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .util_is-mdOnly {
+      display: none;
+    }
+  }
+  
+  .util_is-mdOnly--inline {
+    display: none;
+  }
+  @media screen and (min-width: 660px) {
+    .util_is-mdOnly--inline {
+      display: inline-block;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .util_is-mdOnly--inline {
+      display: none;
+    }
+  }
+  
+  .util_is-mdAppears {
+    display: none;
+  }
+  @media screen and (min-width: 660px) {
+    .util_is-mdAppears {
+      display: block;
+    }
+  }
+  
+  .util_is-mdAppears--inline {
+    display: none;
+  }
+  @media screen and (min-width: 660px) {
+    .util_is-mdAppears--inline {
+      display: inline-block;
+    }
+  }
+  
+  .util_is-lgOnly {
+    display: none;
+  }
+  @media screen and (min-width: 1232px) {
+    .util_is-lgOnly {
+      display: block;
+    }
+  }
+  
+  .util_is-lgOnly--inline {
+    display: none;
+  }
+  @media screen and (min-width: 1232px) {
+    .util_is-lgOnly--inline {
+      display: inline-block;
+    }
+  }
+  
+  .util_img-is-responsive {
+    width: 100%;
+  }
+  
+  /* --------start componentSupport/anchor-roleButton import ------------- */
+  .auro_roleButton {
+    display: inline-block;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #0074c8;
+    border: 1px solid transparent;
+    line-height: 3;
+  }
+  @media (hover: hover) {
+    .auro_roleButton:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #054687;
+    }
+  }
+  
+  /* --------start componentSupport/anchor-roleTab import ------------- */
+  .auro_roleTab {
+    padding: 1rem;
+    color: #0074c8;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #626b79;
+    margin-right: calc(0.25rem * -1);
+  }
+  .auro_roleTab:not(.is-touching):hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #054687;
+    border-width: 0 0 2px;
+    border-color: currentColor;
+  }
+  .auro_roleTab.is-active {
+    cursor: pointer;
+    text-decoration: none;
+    color: #222222;
+    border-width: 0 0 2px;
+    border-color: currentColor;
+  }
+  
+  /* --------start componentSupport/containedButtons import ------------- */
+  /* stylelint-disable selector-type-no-unknown */
+  .auro_containedButtons {
+    display: flex;
+    flex-direction: column;
+  }
+  .auro_containedButtons > * {
+    margin-bottom: 1rem;
+  }
+  .auro_containedButtons > *:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1024px) {
+    .auro_containedButtons {
+      flex-direction: row;
+    }
+    .auro_containedButtons > * {
+      margin-bottom: 0;
+      margin-left: 1rem;
+    }
+    .auro_containedButtons > *:first-child {
+      margin-left: 0;
+    }
+  }
+  
+  /* --------start componentSupport/tablist import ------------- */
+  .auro_tablist {
+    overflow-y: scroll;
+    height: calc(3rem + 1px);
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #626b79;
+    line-height: 3rem;
+  }
+  @media screen and (min-width: 660px) {
+    .auro_tablist {
+      overflow-y: unset;
+      white-space: unset;
+    }
+  }
+  
+  /* --------start componentSupport/tablist import ------------- */
+  .auro_table {
+    display: block;
+    overflow: scroll;
+    width: auto;
+    margin-bottom: 2rem;
+    border-spacing: 0.75rem;
+    border-collapse: collapse;
+    font-weight: 100;
+  }
+  .auro_table tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  .auro_table th {
+    text-align: left;
+    font-weight: 500;
+  }
+  @media screen and (min-width: 660px) {
+    .auro_table {
+      display: table;
+      width: 100%;
+    }
+  }
+  .auro_table thead {
+    border-collapse: collapse;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .auro_table th,
+  .auro_table td {
+    padding: 1rem;
+  }
+  
+  /* --------start utilityClasses/layoutProperties import ------------- */
+  .util_floatLeft {
+    float: left;
+  }
+  
+  .util_floatRight {
+    float: right;
+  }
+  
+  .util_margin--auto {
+    margin: 0 auto;
+  }
+  
+  /* --------start picture import ------------- */
+  picture img {
+    display: block;
+  }
+  
+  /* --------start blockquote import ------------- */
+  blockquote {
+    margin-left: 0;
+    border-left: 1px solid var(--auro-color-border-active-on-light);
+    padding: var(--auro-size-100);
+    padding-left: var(--auro-size-400);
+    color: var(--auro-color-text-secondary-on-light);
+    font-weight: 200;
+    margin-top: var(--auro-size-300);
+    margin-bottom: var(--auro-size-300);
+  }
+  blockquote p {
+    line-height: 2;
+  }
+  blockquote p:last-child {
+    margin-bottom: 0;
+  }
+  blockquote + p {
+    margin-bottom: var(--auro-size-400);
+  }
+
+  .merch-container {
+    container-type: inline-size;
+    margin-block: var(--ds-size-200);
+  }
+  auro-sidenavitem::part(link) {
+    padding: calc(var(--auro-size-200) - 2px);
+}
