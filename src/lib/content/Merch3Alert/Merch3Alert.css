@@ -29,6 +29,11 @@
     max-height: 6rem;
 }
 
+.merchAlert[data-variant="3"] auro-avatar {
+    width: 12rem;
+    height: 12rem;
+}
+
 .merchAlert[data-variant="3"] auro-icon {
     display: none;
 }
@@ -43,20 +48,18 @@
         background-size: 60%;
     }
 
-    .merchAlert[data-variant="3"] auro-avatar {
-        width: 12rem;
-        height: 12rem;
-    }
     .merchAlert[data-variant="3"] {
         padding: var(--ds-size-200);
     }
 }
 
-@container (min-width: 465px) {
+@container (min-width: 490px) {
     .merchAlert[data-variant="3"] {
         background-size: 0%;
-        max-height: var(--ds-size-1000);
         align-content: center;
+    }
+    .merchAlert[data-variant="3"] .merch__img {
+        max-height: 3rem;
     }
     .merchAlert[data-variant="3"] auro-icon {
         display: inline-block;
