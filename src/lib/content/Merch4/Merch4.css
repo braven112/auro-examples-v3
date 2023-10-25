@@ -20,7 +20,7 @@
     border-radius: 5px;
     overflow: hidden;
     text-wrap: balance; /* Progressive enhancement to make text wrapping better */
-    padding: var(--merch4-padding);
+    padding: var(--merch4-padding) calc(.5 * var(--merch4-padding));
     color: var(--merch4-text-color-primary);
 }
 
@@ -119,10 +119,10 @@
     .merch[data-variant="4"] img.product__graphic-detail {
         max-width: 275px;
     }
-    .merch[data-variant="4"] .product__fineprint-sm, .merch[data-variant="4"] .product__fineprint-md {
+    .merch[data-variant="4"] .product__fineprint-sm, .merch[data-variant="4"] .product__fineprint-lg {
         display:none;
     }
-    .merch[data-variant="4"] .product__fineprint-lg {
+    .merch[data-variant="4"] .product__fineprint-md {
         display:block;
     }
     .merch[data-variant="4"] .product__flight-details {
@@ -137,4 +137,11 @@
         font-weight: bold;
     }
 }
-
+@container (min-width: 1000px) {
+    .merch[data-variant="4"] .product__fineprint-sm, .merch[data-variant="4"] .product__fineprint-md {
+        display:none;
+    }
+    .merch[data-variant="4"] .product__fineprint-lg {
+        display:block;
+    }
+}
