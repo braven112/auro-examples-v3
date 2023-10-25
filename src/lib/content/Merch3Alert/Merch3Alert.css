@@ -59,7 +59,7 @@
         align-content: center;
     }
     .merchAlert[data-variant="3"] .merch__img {
-        max-height: 3rem;
+        max-height: 2.75rem;
     }
     .merchAlert[data-variant="3"] auro-icon {
         display: inline-block;
