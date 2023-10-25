@@ -21,19 +21,17 @@
 	<div class="container"><Merch4 /></div>
   
 	<div class="grid-3col">
-		<div class="container">
-      <auro-header level="2" display="400">Side nav</auro-header>
-    </div>
+		<div class="container"><auro-header level="2" display="400">Side nav</auro-header><Merch4 /></div>
 		<div class="container"><auro-header level="2" display="400">Main - 3 column layout</auro-header><Merch4 /></div>
-		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch4 /></div>
 	</div>
 	<div class="grid-2colSideNav">
-		<div class="container"><auro-header level="2" display="400">Side nav</auro-header></div>
+		<div class="container"><auro-header level="2" display="400">Side nav</auro-header><Merch4 /></div>
 		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch4 /></div>
 	</div>
 	<div class="grid-2colAnchorNav">
 		<div class="container"><auro-header level="2" display="400">Main - 2 column layout</auro-header><Merch4 /></div>
-		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header></div>
+		<div class="container"><auro-header level="2" display="400">Anchor nav</auro-header><Merch4 /></div>
 	</div>
 	<div class="grid-2col5050">
 		<div class="container"><auro-header level="2" display="400">50/50</auro-header><Merch4 /></div>
