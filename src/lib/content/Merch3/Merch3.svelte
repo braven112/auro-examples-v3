@@ -2,8 +2,8 @@
   import "./Merch3.css";
   import planes from '$lib/images/planes.svg';
   import lines from '$lib/images/lines.svg';
-  import campaign from './Campaign_Data.json';
-  import flight from './Flight_Data.json';
+  import campaign from '../personal/Campaign_Data.json';
+  import flight from '../personal/Flight_Data.json';
 </script>
 <div class="merch-container">
 <article class="merch" data-variant="3">
@@ -38,4 +38,4 @@
       </div>
   </div>
 </article>
-      </div>
+</div>

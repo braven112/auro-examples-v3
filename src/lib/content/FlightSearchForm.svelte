@@ -17,8 +17,10 @@
       <CityMenuOptions />
     </auro-menu>
   </auro-combobox>
-  <auro-datepicker required>
-    <span slot="label">Choose a date</span>
+  <auro-datepicker range>
+    <span slot="fromLabel">Departure</span>
+    <span slot="toLabel">Return</span>
+    <span slot="mobileDateLabel">Roundtrip</span>
   </auro-datepicker>
   <auro-button fluid>Search</auro-button>
 </div>

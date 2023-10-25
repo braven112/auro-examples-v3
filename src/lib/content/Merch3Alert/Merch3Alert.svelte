@@ -1,7 +1,7 @@
 <script>
 	import lines from '$lib/images/lines.svg';
-	import campaign from '../Merch3/Campaign_Data.json';
-	import flight from '../Merch3/Flight_Data.json';
+	import campaign from '../personal/Campaign_Data.json';
+	import flight from '../personal/Flight_Data.json';
 	import './Merch3Alert.css';
 </script>
 <div class="merch-container">

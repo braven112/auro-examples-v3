@@ -80,10 +80,15 @@
   let imgBgMd = `url(${jsonData.urls.full}&w=2400) center center/cover no-repeat`;
   let imgAriaLabel = `${jsonData.alt_description}`;
 
+  if(!jsonData) {
   getUnsplashImage();
+  }
   
 
 
+  /**
+	 * @param {{ urls: { full: any; }; alt_description: any; location: { title: any; }; id: string; description: any; }} json
+	 */
   function populateImage(json) {
     imgBgMd = `url(${json.urls.full}&w=2400) center center/cover no-repeat`;
     imgAriaLabel = `${json.alt_description}`;
@@ -102,7 +107,7 @@
       })
       .then(function (jsonData) {
         // Put the object into storage
-        //localStorage.setItem('cachedJsonData', JSON.stringify(jsonData));
+        localStorage.setItem('cachedJsonData', JSON.stringify(jsonData));
         populateImage(jsonData);
       })
       .catch(function (error) {
@@ -118,6 +123,9 @@
   <auro-background id="hero" role="img" inset="md" insetMd="xl" bgMd={imgBgMd}>
     <div class="container">
       <div class="img-container">
+        <FlightSearchForm />
+      </div>
+      <div class="heroOffer-container">
         <FlightSearchForm />
       </div>
       <span id="location">{imageLocation}</span>
@@ -143,19 +151,21 @@
   }
   @media screen and (min-width: 1024px) {
     .img-container {
-      margin: 5vw auto;
+      margin: 0vw auto;
     }
   }
   @media screen and (min-width: 2048px) {
     .img-container {
-      margin: 6vw auto;
+      margin: 3vw auto;
     }
   }
 
   .container {
-    display: block;
+    display: grid;
     max-width: 1232px;
     margin: auto;
     padding: var(--padding);
+    grid-template-columns: min-content auto;
+    gap: 3rem;
   }
 </style>

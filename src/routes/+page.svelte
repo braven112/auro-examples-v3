@@ -2,6 +2,10 @@
 	import FooterTa from '$lib//footer/FooterTA.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import Hero from '$lib/content/Hero.svelte';
+	import Merch from '$lib/content/Merch/Merch.svelte';
+	import Merch3 from '$lib/content/Merch3/Merch3.svelte';
+	import Merch3Alert from '$lib/content/Merch3Alert/Merch3Alert.svelte';
 </script>
 
 <svelte:head>
@@ -10,14 +14,31 @@
 </svelte:head>
 
 <section>
-	Default page
+	<Hero />
+</section>
+<section>
+	<div class="homeContainer">
+		<Merch3Alert />
+	</div>
+</section>
+<section>
+	<div class="homeContainer">
+		<Merch3 />
+	</div>
 </section>
 
 <style>
 	section {
+		/* display: grid;
+		justify-content: space-around;*/
+		margin-bottom: 2rem; 
+	}
+	.homeContainer {
+		max-width: 1232px;
+		margin: auto;
+		padding: 0 var(--auro-size-xl);
 		display: grid;
-		justify-content: space-around;
-		margin-top: 2rem;
+   		gap: var(--auro-size-sm);
 	}
 </style>
 

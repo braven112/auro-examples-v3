@@ -4,6 +4,7 @@
 
 <script>
   import FormExamples from "$lib/content/FormExamples.svelte";
+  import FlightSearchForm from "$lib/content/FlightSearchForm.svelte"
 </script>
 
 <svelte:head>
@@ -24,6 +25,11 @@
     <auro-header display="700">No background</auro-header>
     <FormExamples />
   </div>
+  <div class="row defalt">
+    <auro-header display="700">No background</auro-header>
+    <FlightSearchForm />
+  </div>
+  
 </div>
 
 <style>
