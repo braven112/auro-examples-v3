@@ -3,9 +3,9 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import Hero from '$lib/content/Hero.svelte';
-	import Merch from '$lib/content/Merch/Merch.svelte';
 	import Merch3 from '$lib/content/Merch3/Merch3.svelte';
 	import Merch3Alert from '$lib/content/Merch3Alert/Merch3Alert.svelte';
+	import Merch4 from '$lib/content/Merch4/Merch4.svelte';
 </script>
 
 <svelte:head>
@@ -24,6 +24,11 @@
 <section>
 	<div class="homeContainer">
 		<Merch3 />
+	</div>
+</section>
+<section>
+	<div class="homeContainer">
+		<Merch4 />
 	</div>
 </section>
 

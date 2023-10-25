@@ -1,0 +1,140 @@
+
+:root {
+    --merch4-circle-size: 4rem;
+    --merch4-circle-position:-.5rem;
+    --merch4-background-color-primary:var(--ds-color-background-darkest);
+    --merch4-background-color-secondary:var(--ds-color-brand-atlas-400);
+    --merch4-background-color-accent: var(--ds-color-brand-breeze-200);
+    --merch4-background-color-accent2:var(--ds-color-background-darker);
+    --merch4-border-color-primary: var(--ds-color-border-darkest);
+    --merch4-border-color-secondary: var(--ds-color-border-darker);
+    --merch4-text-color-primary: var(--ds-color-text-primary-inverse);
+    --merch4-padding: var(--ds-size-400);
+    --merch4-padding-slim: var(--ds-size-100);
+    --merch4-text-body-size-xs: var(--ds-text-body-size-xs);
+ }
+ 
+ .merch[data-variant="4"] {
+    display: grid;
+    background-color: var(--merch4-background-color-primary);
+    border-radius: 5px;
+    overflow: hidden;
+    text-wrap: balance; /* Progressive enhancement to make text wrapping better */
+    padding: var(--merch4-padding);
+    color: var(--merch4-text-color-primary);
+}
+
+.merch[data-variant="4"] .product__fineprint-lg, .merch[data-variant="4"] .product__fineprint-md {
+    display:none;
+}
+
+.merch[data-variant="4"] img.product__graphic-detail {
+    max-width: 150px;
+}
+/* .merch[data-variant="4"] .merch__img {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+
+    margin-inline: 0 calc(-1 * var(--ds-size-800));
+    border-radius: 50%;
+    margin-block: -15rem;
+} */
+
+@container (max-width: 419px) {
+    .merch[data-variant="4"] .merch__content {
+        order: 1;
+    }
+    .merch[data-variant="4"] .merch__img {
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        background-color: var(--merch4-background-color-accent);
+        margin: calc(-5 * var(--merch4-padding)) calc(-5 * var(--merch4-padding)) 0;
+        padding: calc(5 * var(--merch4-padding)) calc(-1 * var(--merch4-padding)) var(--merch4-padding);
+        border-radius: 50%;
+    }
+}
+
+.merch[data-variant="4"] .product__category, .merch[data-variant="4"] .product__flight-details, .merch[data-variant="4"] .product__flight-date {
+    display: none;
+}
+
+.merch[data-variant="4"] .product__headline-md {
+    font-family: 'Bebas Neue';
+    font-size: var(--ds-size-300);
+    font-weight: 600;
+    margin-block: var(--ds-size-200);
+    text-transform: uppercase;
+    color: var(--merch4-text-color-primary);
+    line-height: 1;
+}
+.merch[data-variant="4"] .product__bodycopy {
+    margin-block: var(--ds-size-100);
+}
+
+@container (min-width: 200px) {
+    .merch[data-variant="4"] {
+        gap: var(--ds-size-200);
+    }
+    .merch[data-variant="4"] {
+        padding: var(--merch4-padding);
+    }
+    .merch[data-variant="4"] .product__headline-md {
+        font-size: var(--ds-size-400);
+    }
+}
+@container (min-width: 420px) {
+    .merch[data-variant="4"] {
+        grid-template-columns: auto 35%;
+        gap: var(--ds-size-600);
+        border: 2px solid var(--merch4-border-color-secondary);
+        padding-block: calc(.25 * var(--merch4-padding));
+        height: 210px; /*Can we avoid setting the height here and still match how it looks in the footer? */
+    }
+    .merch[data-variant="4"] .merch__content {
+        align-self: center;
+    }
+    .merch[data-variant="4"] .product__headline-md {
+        margin-block: var(--ds-size-100);
+    }
+    .merch[data-variant="4"] .merch__img {
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        background-color: var(--merch4-background-color-accent);
+        margin-inline: 0 calc(-1 * var(--ds-size-800));
+        border-radius: 50%;
+        margin-block: -15rem;
+    }
+}
+@container (min-width: 620px) {
+    .merch[data-variant="4"] {
+        grid-template-columns: auto 50%;
+        background-color: var(--merch4-background-color-primary);
+        border: 2px solid var(--merch4-border-color-primary);
+        padding-block: calc(.5 * var(--merch4-padding));
+        height: unset;/*Can we avoid setting the height? */
+    }
+    .merch[data-variant="4"] img.product__graphic-detail {
+        max-width: 275px;
+    }
+    .merch[data-variant="4"] .product__fineprint-sm, .merch[data-variant="4"] .product__fineprint-md {
+        display:none;
+    }
+    .merch[data-variant="4"] .product__fineprint-lg {
+        display:block;
+    }
+    .merch[data-variant="4"] .product__flight-details {
+        display:block;
+        margin-block-start: var(--ds-size-50);
+        margin-block-end: var(--ds-size-50);
+        font-weight: bold;
+    }
+    .merch[data-variant="4"] .product__flight-date {
+        display:block;
+        margin-block-start: var(--ds-size-50);
+        font-weight: bold;
+    }
+}
+

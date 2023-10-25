@@ -1,5 +1,6 @@
 <script>
   import FlightSearchForm from "$lib/content/FlightSearchForm.svelte";
+  import campaign from './personal/Campaign_DataCC.json';
 
   let clientID = "IZ9ClO4-rCO5iTEQY9VFTc2L1RBl-3F5D2TdBiOBLLA";
   let endpoint = `https://api.unsplash.com/photos/random/?landscape&collections=Y4PpIW6NUlc&client_id=${clientID}`;
@@ -81,7 +82,7 @@
   let imgAriaLabel = `${jsonData.alt_description}`;
 
   if(!jsonData) {
-  getUnsplashImage();
+    getUnsplashImage();
   }
   
 
@@ -126,7 +127,7 @@
         <FlightSearchForm />
       </div>
       <div class="heroOffer-container">
-        <FlightSearchForm />
+        Some hero text {campaign.headlineMd}
       </div>
       <span id="location">{imageLocation}</span>
     </div>
@@ -149,17 +150,6 @@
       background-color: var(--auro-color-background-lighter);
     }
   }
-  @media screen and (min-width: 1024px) {
-    .img-container {
-      margin: 0vw auto;
-    }
-  }
-  @media screen and (min-width: 2048px) {
-    .img-container {
-      margin: 3vw auto;
-    }
-  }
-
   .container {
     display: grid;
     max-width: 1232px;
@@ -168,4 +158,16 @@
     grid-template-columns: min-content auto;
     gap: 3rem;
   }
+  @media screen and (min-width: 1024px) {
+    .container {
+      margin: 0vw auto;
+    }
+  }
+  @media screen and (min-width: 2048px) {
+    .container {
+      margin: 3vw auto;
+    }
+  }
+
+
 </style>
