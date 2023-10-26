@@ -1,7 +1,5 @@
 
-:root {
-    --merch4-circle-size: 4rem;
-    --merch4-circle-position:-.5rem;
+.merch[data-variant="4"] {
     --merch4-background-color-primary:var(--ds-color-background-darkest);
     --merch4-background-color-secondary:var(--ds-color-brand-atlas-400);
     --merch4-background-color-accent: var(--ds-color-brand-breeze-200);
@@ -11,77 +9,82 @@
     --merch4-text-color-primary: var(--ds-color-text-primary-inverse);
     --merch4-padding: var(--ds-size-400);
     --merch4-padding-slim: var(--ds-size-100);
-    --merch4-text-body-size-xs: var(--ds-text-body-size-xs);
+    --merch4-font-size-xs: var(--ds-text-body-size-xs);
+    --merch4-font-size-sm:var(--ds-size-300);
+    --merch4-font-size-md:var(--ds-size-400);
+    --merch4-font-size-xs-color: #838d9c;
+    --merch4-font-family-accent: 'Bebas Neue';
  }
  
  .merch[data-variant="4"] {
     display: grid;
     background-color: var(--merch4-background-color-primary);
-    border-radius: 5px;
+    border-radius: var(--ds-border-radius);
     overflow: hidden;
     text-wrap: balance; /* Progressive enhancement to make text wrapping better */
     padding: var(--merch4-padding) calc(.5 * var(--merch4-padding));
     color: var(--merch4-text-color-primary);
+    gap: var(--ds-size-200);
 }
-
-.merch[data-variant="4"] .product__fineprint-lg, .merch[data-variant="4"] .product__fineprint-md {
+.merch[data-variant="4"] .product__title-md, .merch[data-variant="4"] .product__title-lg {
+    display: none;
+}
+.merch[data-variant="4"] .product__title  {
+    margin-block: 0;
+}
+.merch[data-variant="4"] .product__headline-sm,.merch[data-variant="4"] .product__headline-lg {
     display:none;
 }
-
+.merch[data-variant="4"] .product__fineprint-md, .merch[data-variant="4"] .product__fineprint-lg {
+    display:none;
+}
+.merch[data-variant="4"] .fineprint {
+    color: var(--merch4-font-size-xs-color);
+    margin-block-end: 0;
+}
+/* Card image */
 .merch[data-variant="4"] img.product__graphic-detail {
     max-width: 150px;
 }
-/* .merch[data-variant="4"] .merch__img {
-    align-items: center;
-    justify-content: center;
-    display: grid;
 
-    margin-inline: 0 calc(-1 * var(--ds-size-800));
-    border-radius: 50%;
-    margin-block: -15rem;
-} */
-
+.merch[data-variant="4"] .product__headline {
+    font-family:var(--merch4-font-family-accent);
+    font-size: var(--merch4-font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--merch4-text-color-primary);
+    line-height: 1;
+    margin-block: var(--ds-size-100);
+}
+.merch[data-variant="4"] .product__bodycopy {
+    margin-block: var(--ds-size-100);
+}
 @container (max-width: 419px) {
     .merch[data-variant="4"] .merch__content {
         order: 1;
+        
+    }
+    .merch[data-variant="4"] .product__title-md {
+        margin-bottom: calc(-.5 * var(--ds-size-200));
+        margin-block-start: 0;
     }
     .merch[data-variant="4"] .merch__img {
         justify-items: center;
         align-items: center;
         display: grid;
         background-color: var(--merch4-background-color-accent);
-        margin: calc(-5 * var(--merch4-padding)) calc(-5 * var(--merch4-padding)) 0;
-        padding: calc(5 * var(--merch4-padding)) calc(-1 * var(--merch4-padding)) var(--merch4-padding);
+        margin: calc(-5 * var(--merch4-padding)) calc(-3 * var(--merch4-padding)) 0;
+        padding: calc(5 * var(--merch4-padding)) 0 var(--merch4-padding);
         border-radius: 50%;
     }
 }
-
-.merch[data-variant="4"] .product__category, .merch[data-variant="4"] .product__flight-details, .merch[data-variant="4"] .product__flight-date {
-    display: none;
-}
-
-.merch[data-variant="4"] .product__headline-md {
-    font-family: 'Bebas Neue';
-    font-size: var(--ds-size-300);
-    font-weight: 600;
-    margin-block: var(--ds-size-200);
-    text-transform: uppercase;
-    color: var(--merch4-text-color-primary);
-    line-height: 1;
-}
-.merch[data-variant="4"] .product__bodycopy {
-    margin-block: var(--ds-size-100);
-}
-
 @container (min-width: 200px) {
-    .merch[data-variant="4"] {
-        gap: var(--ds-size-200);
-    }
+
     .merch[data-variant="4"] {
         padding: var(--merch4-padding);
     }
-    .merch[data-variant="4"] .product__headline-md {
-        font-size: var(--ds-size-400);
+    .merch[data-variant="4"] .product__headline {
+        font-size: var(--merch4-font-size-md);
     }
 }
 @container (min-width: 420px) {
@@ -95,9 +98,6 @@
     .merch[data-variant="4"] .merch__content {
         align-self: center;
     }
-    .merch[data-variant="4"] .product__headline-md {
-        margin-block: var(--ds-size-100);
-    }
     .merch[data-variant="4"] .merch__img {
         align-items: center;
         justify-content: center;
@@ -105,7 +105,13 @@
         background-color: var(--merch4-background-color-accent);
         margin-inline: 0 calc(-1 * var(--ds-size-800));
         border-radius: 50%;
-        margin-block: -15rem;
+        margin-block: -4rem;
+    }
+    .merch[data-variant="4"] .product__headline-sm,.merch[data-variant="4"] .product__headline-lg {
+        display:none;
+    }
+    .merch[data-variant="4"] .product__headline-md {
+        display:block;
     }
 }
 @container (min-width: 620px) {
@@ -113,9 +119,13 @@
         grid-template-columns: auto 50%;
         background-color: var(--merch4-background-color-primary);
         border: 2px solid var(--merch4-border-color-primary);
-        padding-block: calc(.5 * var(--merch4-padding));
+        padding-block: var(--merch4-padding);
         height: unset;/*Can we avoid setting the height? */
     }
+    .merch[data-variant="4"] .merch__img {
+        margin-block: -11rem;
+    }
+    
     .merch[data-variant="4"] img.product__graphic-detail {
         max-width: 275px;
     }
@@ -125,16 +135,11 @@
     .merch[data-variant="4"] .product__fineprint-md {
         display:block;
     }
-    .merch[data-variant="4"] .product__flight-details {
-        display:block;
-        margin-block-start: var(--ds-size-50);
-        margin-block-end: var(--ds-size-50);
-        font-weight: bold;
+    .merch[data-variant="4"] .product__title-sm, .merch[data-variant="4"] .product__title-lg {
+        display: none;
     }
-    .merch[data-variant="4"] .product__flight-date {
-        display:block;
-        margin-block-start: var(--ds-size-50);
-        font-weight: bold;
+    .merch[data-variant="4"] .product__title-md {
+        display: block;
     }
 }
 @container (min-width: 1000px) {
@@ -143,5 +148,11 @@
     }
     .merch[data-variant="4"] .product__fineprint-lg {
         display:block;
+    }
+    .merch[data-variant="4"] .product__title-sm, .merch[data-variant="4"] .product__title-md {
+        display: none;
+    }
+    .merch[data-variant="4"] .product__title-lg {
+        display: block;
     }
 }

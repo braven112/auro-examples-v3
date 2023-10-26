@@ -8,9 +8,13 @@
 
   <div class="merch__content">
     <!--Title-->  
-    <p class="product__title-md" data-type="title-md">{campaign.titleMd}</p>  
+    <p class="product__title product__title-sm" data-type="title-sm">{campaign.titleSm}</p>
+    <p class="product__title product__title-md" data-type="title-md">{campaign.titleMd}</p>
+    <p class="product__title product__title-lg" data-type="title-lg">{campaign.titleLg}</p>  
     <!--Headlines-->  
-    <p class="product__headline-md" data-type="headline-md">{campaign.headlineMd}</p>
+    <p class="product__headline product__headline-sm" data-type="headline-sm">{campaign.headlineSm}</p>
+    <p class="product__headline product__headline-md" data-type="headline-md">{campaign.headlineMd}</p>
+    <p class="product__headline product__headline-lg" data-type="headline-lg">{campaign.headlineLg}</p>
     <!--CTA-->
     <auro-hyperlink ondark class="product__cta-md" data-type="standard" type="nav" href="{campaign.ctaLinkMd}?{campaign.campaignId}">{campaign.ctaMd}</auro-hyperlink>
     <!--Disclaimer-->
