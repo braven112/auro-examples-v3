@@ -151,43 +151,10 @@
 		padding: var(--padding);
 		display: block;
 	}
-	.row {
-		margin-bottom: 3rem;
-	}
 	.container {
 		container-type: inline-size;
 	}
-	.container-xxs {
-		max-width: 140px;
-	}
-
-	.container-xs {
-		max-width: 168px;
-	}
-
-	.container-sm {
-		max-width: 360px;
-	}
-
-	.container-md {
-		max-width: 500px;
-	}
-
-	.container-lg {
-		max-width: 700px;
-	}
-
-	.container-xl {
-		max-width: 900px;
-	}
-
-	.container-xxl {
-		max-width: 1000px;
-	}
-
-	.container-xxxl {
-		max-width: 1232px;
-	}
+	
 	hr {
 		border: .5px dashed #eee;
 		margin: 3rem 0;

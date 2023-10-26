@@ -40,7 +40,7 @@
 	<div class="grid-phones">
 		<div class="container"><auro-header level="2" display="400">iPhone Mini</auro-header><Merch4 /></div>
 		<div class="container"><auro-header level="2" display="400">Galaxy </auro-header><Merch4 /></div>
-		<div class="container"><auro-header level="2" display="400">iPhone XR</auro-header><p><Merch4 /></p></div>
+		<div class="container"><auro-header level="2" display="400">iPhone XR</auro-header><Merch4 /></div>
 	</div>
 
 	<hr>
