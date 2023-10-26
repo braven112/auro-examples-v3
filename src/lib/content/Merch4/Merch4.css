@@ -59,7 +59,7 @@
 .merch[data-variant="4"] .product__bodycopy {
     margin-block: var(--ds-size-100);
 }
-@container (max-width: 419px) {
+@container (max-width: 459px) {
     .merch[data-variant="4"] .merch__content {
         order: 1;
         
@@ -87,7 +87,7 @@
         font-size: var(--merch4-font-size-md);
     }
 }
-@container (min-width: 420px) {
+@container (min-width: 460px) {
     .merch[data-variant="4"] {
         grid-template-columns: auto 35%;
         gap: var(--ds-size-600);
