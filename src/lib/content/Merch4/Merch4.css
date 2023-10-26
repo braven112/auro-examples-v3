@@ -1,5 +1,5 @@
 
-.root {
+:root {
     --merch4-background-color-primary:var(--ds-color-background-darkest);
     --merch4-background-color-secondary:var(--ds-color-brand-atlas-400);
     --merch4-background-color-accent: var(--ds-color-brand-breeze-200);
