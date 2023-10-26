@@ -13,6 +13,7 @@
     --merch4-font-size-md:var(--ds-size-400);
     --merch4-font-size-xs-color: #838d9c;
     --merch4-font-family-accent: 'Bebas Neue';
+    --merch4-image-column-size-lg: 45%;
  }
  
  .merch[data-variant="4"] {
@@ -115,7 +116,7 @@
 }
 @container (min-width: 620px) {
     .merch[data-variant="4"] {
-        grid-template-columns: auto 50%;
+        grid-template-columns: auto var(--merch4-image-column-size-lg);
         background-color: var(--merch4-background-color-primary);
         border: 2px solid var(--merch4-border-color-primary);
         padding-block: var(--merch4-padding);
