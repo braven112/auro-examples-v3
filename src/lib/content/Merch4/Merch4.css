@@ -1,4 +1,3 @@
-
 :root {
     --merch4-background-color-primary:var(--ds-color-background-darkest);
     --merch4-background-color-secondary:var(--ds-color-brand-atlas-400);
@@ -14,6 +13,7 @@
     --merch4-font-size-xs-color: #838d9c;
     --merch4-font-family-accent: 'Bebas Neue';
     --merch4-image-column-size-lg: 45%;
+    --merch4-background-shape: 50%;
  }
  
  .merch[data-variant="4"] {
@@ -75,7 +75,7 @@
         background-color: var(--merch4-background-color-accent);
         margin: calc(-5 * var(--merch4-padding)) calc(-3 * var(--merch4-padding)) 0;
         padding: calc(5 * var(--merch4-padding)) 0 var(--merch4-padding);
-        border-radius: 50%;
+        border-radius: var(--merch4-background-shape);
     }
 }
 @container (min-width: 200px) {
