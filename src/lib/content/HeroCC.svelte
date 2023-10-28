@@ -1,7 +1,6 @@
 <script>
 	import FlightSearchForm from '$lib/content/FlightSearchForm.svelte';
 	import campaign from './personal/Campaign_DataCC.json';
-	import card from '../images/as-card.svg';
 
 	let clientID = 'IZ9ClO4-rCO5iTEQY9VFTc2L1RBl-3F5D2TdBiOBLLA';
 	let endpoint = `https://api.unsplash.com/photos/random/?landscape&collections=Y4PpIW6NUlc&client_id=${clientID}`;
