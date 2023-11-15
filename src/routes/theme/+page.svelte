@@ -104,7 +104,7 @@
 		background-color: #eee;
 	}
 
-  @media screen and (min-width: 1024px) {
+
   .spotify {
     --auro-color-ui-default-on-light: #1ed760;
     --auro-color-background-lightest: #000;
@@ -125,8 +125,8 @@
     --auro-size-700: 3.5rem;
 
   }
-}
-@media screen and (min-width: 1024px) {
+
+
   .stumptown {
     --auro-color-ui-default-on-light: rgb(218, 212, 190);
     --auro-color-background-lightest: #2b2a2b;
@@ -147,8 +147,7 @@
     --auro-size-700: 3.5rem;
 
   }
-}
-@media screen and (min-width: 1024px) {
+
   .tmobile {
     --auro-color-ui-default-on-light: #e20074;
     --auro-color-background-lightest: #000;
@@ -169,5 +168,5 @@
     --auro-size-700: 3.5rem;
 
   }
-}
+
 </style>
