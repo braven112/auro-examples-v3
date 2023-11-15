@@ -14,7 +14,7 @@
 <div class="mainContent">
 	<auro-header>Themes</auro-header>
 	<p>
-		A simple example of how changing design tokens can completly change the look of a group of auro components.  
+		A simple example of how changing design tokens can completely change the look of a group of auro components.  
 	</p>
 	<div class="sidebyside">
 		<div class="row default">
