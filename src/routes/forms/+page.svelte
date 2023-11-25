@@ -24,12 +24,7 @@
   <div class="row defalt">
     <auro-header display="700">No background</auro-header>
     <FormExamples />
-  </div>
-  <div class="row defalt">
-    <auro-header display="700">No background</auro-header>
-    <FlightSearchForm />
-  </div>
-  
+  </div> 
 </div>
 
 <style>
