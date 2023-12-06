@@ -109,20 +109,34 @@
     --auro-color-ui-default-on-light: #1ed760;
     --auro-color-background-lightest: #000;
     --auro-color-background-darker: #1ed760;
-    --auro-color-text-primary-on-dark: #000;
-    
+    --auro-color-text-primary-on-dark: #000;   
     --auro-color-ui-hover-on-light: #169c46;
     --auro-color-ui-active-on-light:#1fdf64;
+
+    --ds-color-ui-default-on-light: #1ed760;
+    --ds-color-background-lightest: #000;
+    --ds-color-background-darker: #1ed760;
+    --ds-color-text-primary-on-dark: #000;
+
+    --ds-color-ui-hover-on-light: #169c46;
+    --ds-color-ui-active-on-light:#1fdf64;
 
     --auro-color-border-active-on-light:#1fdf64;
     --auro-color-border-primary-on-light:#666;
     --auro-border-radius: 30px;
+    --ds-color-border-active-on-light:#1fdf64;
+    --ds-color-border-primary-on-light:#666;
+    --ds-border-radius: 30px;
 
     --auro-color-text-primary-on-light: #FFF;
     --auro-color-text-secondary-on-light: #fff;
+    --ds-color-text-primary-on-light: #FFF;
+    --ds-color-text-secondary-on-light: #fff;
 
     --auro-size-150: 1rem;
     --auro-size-700: 3.5rem;
+    --ds-size-150: 1rem;
+    --ds-size-700: 3.5rem;
 
   }
 
