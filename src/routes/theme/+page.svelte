@@ -127,6 +127,7 @@
     --ds-color-border-active-on-light:#1fdf64;
     --ds-color-border-primary-on-light:#666;
     --ds-border-radius: 30px;
+    --ds-color-border-primary-default:#1fdf64;
 
     --auro-color-text-primary-on-light: #FFF;
     --auro-color-text-secondary-on-light: #fff;
