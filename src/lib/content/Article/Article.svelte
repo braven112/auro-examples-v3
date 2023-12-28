@@ -14,7 +14,7 @@
 </div>
   <div class="article_date">Last Updated: {article.lastUpdatedOnDate}</div>
   <span class="article_readminutes"><auro-icon category="interface" name="calendar" ariaHidden="false"></auro-icon> {article.minutes} min. read</span>
-  <span class="article_tags"><auro-hyperlink href="https://auro-examples.vercel.app/newsletter">Bunnies</auro-hyperlink>, <auro-hyperlink href="https://auro-examples.vercel.app/newsletter">Badgers</auro-hyperlink>, <auro-hyperlink href="https://auro-examples.vercel.app/newsletter">Beavers</auro-hyperlink></span>
+  <span class="article_tags"><auro-icon category="interface" name="tag" ariaHidden="false"></auro-icon> <auro-hyperlink href="https://auro-examples.vercel.app/newsletter">Bunnies</auro-hyperlink>, <auro-hyperlink href="https://auro-examples.vercel.app/newsletter">Badgers</auro-hyperlink>, <auro-hyperlink href="https://auro-examples.vercel.app/newsletter">Beavers</auro-hyperlink></span>
   <div class="article_summary">TLDR; {article.summary}</div>
   <div class="article_full">{article.full}</div>
 </article>
