@@ -58,7 +58,7 @@
 <div class="mainContent">
   <div class="articles">
     <div>
-    <auro-header margin="top" size="none">Auro Newsletter</auro-header>
+    <auro-header margin="both" size="none">Auro Newsletter</auro-header>
     <span class="newsletter_tagline">Your UX and Front End Newsletter</span>
   </div>
     <ArticleSummary></ArticleSummary>
