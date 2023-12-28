@@ -12,9 +12,9 @@
     <span class="author_youtube"><auro-hyperlink href={author.youtube_url}><auro-icon category="social" name="youtube" ariaHidden="false"></auro-icon></auro-hyperlink></span>
     <span class="author_instagram"><auro-hyperlink href={author.instagram_url}><auro-icon category="social" name="instagram" ariaHidden="false"></auro-icon></auro-hyperlink></span>
 </div>
-  <span class="article_date">Last Updated: {article.lastUpdatedOnDate}</span>
-  <div class="article_readminutes"><auro-icon category="interface" name="calendar" ariaHidden="false"></auro-icon> {article.minutes} min. read</div>
-  <div class="article_tags"><auro-icon category="interface" name="tag" ariaHidden="false"></auro-icon> <auro-hyperlink href={author.youtube_url}>Bunnies</auro-hyperlink>, <auro-hyperlink href={author.youtube_url}>Badgers</auro-hyperlink>, <auro-hyperlink href={author.youtube_url}>Beavers</auro-hyperlink></div>
+  <div class="article_date">Last Updated: {article.lastUpdatedOnDate}</div>
+  <span class="article_readminutes"><auro-icon category="interface" name="calendar" ariaHidden="false"></auro-icon> {article.minutes} min. read</span>
+  <span class="article_tags"><auro-icon category="interface" name="tag" ariaHidden="false"></auro-icon> <auro-hyperlink href={author.youtube_url}>Bunnies</auro-hyperlink>, <auro-hyperlink href={author.youtube_url}>Badgers</auro-hyperlink>, <auro-hyperlink href={author.youtube_url}>Beavers</auro-hyperlink></span>
   <div class="article_summary">TLDR; {article.summary}</div>
   <div class="article_full">{article.full}</div>
 </article>
@@ -39,5 +39,6 @@
     padding: var(--article-gap);
     margin-block: var(--article-gap);
     border-left: 8px solid var(--ds-color-background-darker);
+    font-size: var(--ds-text-body-size-lg);
   }
 </style>
