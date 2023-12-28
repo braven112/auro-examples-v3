@@ -47,7 +47,7 @@
 
 <script>
   import ArticleSummary from "$lib/content/Article/ArticleSummary.svelte";
-	import Author from "$lib/content/Article/Author.svelte";
+  import author from "$lib/content/Article/Author.json";
 </script>
 
 <svelte:head>
@@ -58,7 +58,7 @@
 <div class="mainContent">
   <div class="articles">
     <div>
-    <auro-header margin="both" size="none">Auro Newsletter</auro-header>
+    <auro-header margin="top" size="none">Auro Newsletter</auro-header>
     <span class="newsletter_tagline">Your UX and Front End Newsletter</span>
   </div>
     <ArticleSummary></ArticleSummary>
@@ -66,7 +66,8 @@
     <ArticleSummary></ArticleSummary>
   </div>
   <aside>
-    <Author></Author>
+    <auro-header display="500" margin="both" size="none"><auro-icon category="interface" name="tag" ariaHidden="false"></auro-icon> Tags</auro-header>
+    <span class="article_tags"><auro-hyperlink href={author.youtube_url}>Bunnies</auro-hyperlink>, <auro-hyperlink href={author.youtube_url}>Badgers</auro-hyperlink>, <auro-hyperlink href={author.youtube_url}>Beavers</auro-hyperlink></span>
   </aside>
 </div>
 
@@ -81,13 +82,16 @@
     padding-top: 4rem;
     display: grid;
     gap:var(--page-gap);
-    grid-template-columns: auto 168px;
+  }
+  @media screen and (min-width: 768px) {
+    .mainContent {
+      grid-template-columns: auto 168px;
+    }
   }
   .newsletter_tagline {
     color: var(--newsletter_tagline);
   }
   .articles {
-    margin-top: var(--article-gap);
     display: grid;
     gap:var(--article-gap);
   }

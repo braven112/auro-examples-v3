@@ -32,7 +32,11 @@
     padding-top: 4rem;
     display: grid;
     gap:var(--page-gap);
-    grid-template-columns: auto 168px;
+  }
+  @media screen and (min-width: 768px) {
+    .mainContent {
+      grid-template-columns: auto 168px;
+    }
   }
   .newsletter_tagline {
     color: var(--newsletter_tagline);
