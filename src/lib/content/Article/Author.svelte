@@ -8,21 +8,19 @@
         <auro-avatar img="https://picsum.photos/200?random=0"></auro-avatar>
     </picture>
     <auro-header display="600" margin="bottom" size="none">{author.author}</auro-header>
-    
-    <div class="author_socials">
-        <span class="author_linkedin"><auro-icon category="social" name="linkedin" ariaHidden="false"></auro-icon> {author.linkedin} </span>
-        <span class="author_x"><auro-icon category="social" name="twitter" ariaHidden="false"></auro-icon> {author.x} </span>
-        <span class="author_youtube"><auro-icon category="social" name="youtube" ariaHidden="false"></auro-icon> {author.youtube} </span>
-        <span class="author_instagram"><auro-icon category="social" name="instagram" ariaHidden="false"></auro-icon> {author.instagram} </span>
-    </div>
-    <auro-header display="300" margin="bottom" size="none">About the author</auro-header>
     <p class="author_summary">{author.authorSummary}</p>
+    <div class="author_socials">
+        <span class="author_linkedin"><auro-icon category="social" name="linkedin" ariaHidden="false"></auro-icon></span>
+        <span class="author_x"><auro-icon category="social" name="twitter" ariaHidden="false"></auro-icon></span>
+        <span class="author_youtube"><auro-icon category="social" name="youtube" ariaHidden="false"></auro-icon></span>
+        <span class="author_instagram"><auro-icon category="social" name="instagram" ariaHidden="false"></auro-icon></span>
+    </div>
   </article>
   
   <style>
     .author_socials {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto auto;
     }
     .author_socials > span {
         display: grid;

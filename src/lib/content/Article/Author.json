@@ -1,7 +1,7 @@
 {
     "authorId":"XXXX",
     "author": "John Doe",
-    "authorSummary":"John Doe has been at Alaska since 1979 and a writer, designer and developer for over 100 years.  A former Managing Editor at no magazines or anything important at all really.",
+    "authorSummary":"John Doe hasn't been working since 1979 nor has he been a writer, designer and developer for over any number of years.  A former Managing Editor at no magazines or anything important at all really.",
     "x":"@johndoe",
     "x_url":"https://auro-examples.vercel.app/newsletterarticle",
     "linkedin":"@johndoe",

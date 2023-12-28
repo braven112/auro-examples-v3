@@ -67,7 +67,7 @@
   </div>
   <aside>
     <auro-header display="500" margin="both" size="none"><auro-icon category="interface" name="tag" ariaHidden="false"></auro-icon> Tags</auro-header>
-    <span class="article_tags"><auro-hyperlink href={author.youtube_url}>Bunnies</auro-hyperlink>, <auro-hyperlink href={author.youtube_url}>Badgers</auro-hyperlink>, <auro-hyperlink href={author.youtube_url}>Beavers</auro-hyperlink></span>
+    <span class="article_tags"><auro-hyperlink href="https://auro-examples.vercel.app/newsletter">Bunnies</auro-hyperlink>, <auro-hyperlink href="https://auro-examples.vercel.app/newsletter">Badgers</auro-hyperlink>, <auro-hyperlink href="https://auro-examples.vercel.app/newsletter">Beavers</auro-hyperlink></span>
   </aside>
 </div>
 

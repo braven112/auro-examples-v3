@@ -4,11 +4,12 @@
 
 <script>
   import Article from "$lib/content/Article/Article.svelte";
+  import ArticleData from "$lib/content/Article/Article_Content.json"
 	import Author from "$lib/content/Article/Author.svelte";
 </script>
 
 <svelte:head>
-  <title>Newsletter: Some title of the newsletter</title>
+  <title>Newsletter: {ArticleData.headline}</title>
 </svelte:head>
 
 
