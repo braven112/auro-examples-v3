@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
   export const prerender = true;
 </script>
 
@@ -39,4 +39,58 @@
     gap:var(--article-gap);
   }
 
+</style> -->
+
+<script context="module">
+  export const prerender = true;
+</script>
+
+<script>
+  import ArticleSummary from "$lib/content/Article/ArticleSummary.svelte";
+	import Author from "$lib/content/Article/Author.svelte";
+</script>
+
+<svelte:head>
+  <title>Newsletter: Some title of the newsletter</title>
+</svelte:head>
+
+
+<div class="mainContent">
+  <div class="articles">
+    <div>
+    <auro-header margin="both" size="none">Auro Newsletter</auro-header>
+    <span class="newsletter_tagline">Your UX and Front End Newsletter</span>
+  </div>
+    <ArticleSummary></ArticleSummary>
+    <ArticleSummary></ArticleSummary>
+    <ArticleSummary></ArticleSummary>
+  </div>
+  <aside>
+    <Author></Author>
+  </aside>
+</div>
+
+<style>
+  :root {
+    --page-gap: var(--ds-size-500);
+    --article-gap: var(--ds-size-300);
+    --newsletter_tagline: var(--ds-color-brand-breeze-300);
+  }
+	.mainContent {
+    padding: var(--padding);
+    padding-top: 4rem;
+    display: grid;
+    gap:var(--page-gap);
+    grid-template-columns: auto 168px;
+  }
+  .newsletter_tagline {
+    color: var(--newsletter_tagline);
+  }
+  .articles {
+    margin-top: var(--article-gap);
+    display: grid;
+    gap:var(--article-gap);
+  }
+
 </style>
+
