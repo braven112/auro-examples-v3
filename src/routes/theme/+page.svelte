@@ -145,21 +145,32 @@
   .stumptown {
     --auro-color-ui-default-on-light: rgb(218, 212, 190);
     --auro-color-background-lightest: #2b2a2b;
+    --ds-color-background-lightest: #2b2a2b;
     --auro-color-background-darker: rgb(218, 212, 190);
+    --ds-color-background-darker: rgb(218, 212, 190);
     --auro-color-text-primary-on-dark: #2b2a2b;
     
     --auro-color-ui-hover-on-light: rgb(255, 250, 228);
     --auro-color-ui-active-on-light:rgb(255, 250, 228);
+    --ds-color-ui-hover-on-light: rgb(255, 250, 228);
+    --ds-color-ui-active-on-light:rgb(255, 250, 228);
 
     --auro-color-border-active-on-light:rgb(255, 250, 228);
     --auro-color-border-primary-on-light:#666;
     --auro-border-radius: 0px;
+    --ds-color-border-active-on-light:rgb(255, 250, 228);
+    --ds-color-border-primary-on-light:#666;
+    --ds-border-radius: 0px;
 
     --auro-color-text-primary-on-light: #FFF;
     --auro-color-text-secondary-on-light: #fff;
+    --ds-color-text-primary-on-light: #FFF;
+    --ds-color-text-secondary-on-light: #fff;
 
     --auro-size-150: 1rem;
     --auro-size-700: 3.5rem;
+    --ds-size-150: 1rem;
+    --ds-size-700: 3.5rem;
 
   }
 
@@ -168,19 +179,36 @@
     --auro-color-background-lightest: #000;
     --auro-color-background-darker: #e20074;
     --auro-color-text-primary-on-dark: #000;
+
+    --ds-color-ui-default-on-light: #e20074;
+    --ds-color-background-lightest: #000;
+    --ds-color-background-darker: #e20074;
+    --ds-color-text-primary-on-dark: #000;
     
     --auro-color-ui-hover-on-light: #a7005a;
     --auro-color-ui-active-on-light:#e20074;
+    --ds-color-ui-hover-on-light: #a7005a;
+    --ds-color-ui-active-on-light:#e20074;
 
     --auro-color-border-active-on-light:#e20074;
     --auro-color-border-primary-on-light:#666;
     --auro-border-radius: 0px;
 
+    --ds-color-border-active-on-light:#e20074;
+    --ds-color-border-primary-on-light:#666;
+    --ds-border-radius: 0px;
+
     --auro-color-text-primary-on-light: #FFF;
     --auro-color-text-secondary-on-light: #fff;
 
+    --ds-color-text-primary-on-light: #FFF;
+    --ds-color-text-secondary-on-light: #fff;
+
     --auro-size-150: 1rem;
     --auro-size-700: 3.5rem;
+    
+    --ds-size-150: 1rem;
+    --ds-size-700: 3.5rem;
 
   }
 
