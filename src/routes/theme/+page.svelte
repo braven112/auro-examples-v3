@@ -113,13 +113,15 @@
     --auro-color-ui-hover-on-light: #169c46;
     --auro-color-ui-active-on-light:#1fdf64;
 
-    --ds-color-ui-default-on-light: #1ed760;
+    --ds-color-ui-default-default:#1ed760;
     --ds-color-background-lightest: #000;
     --ds-color-background-darker: #1ed760;
     --ds-color-text-primary-on-dark: #000;
+    --ds-color-text-primary-default:#fff;
 
     --ds-color-ui-hover-on-light: #169c46;
     --ds-color-ui-active-on-light:#1fdf64;
+  
 
     --auro-color-border-active-on-light:#1fdf64;
     --auro-color-border-primary-on-light:#666;
@@ -139,6 +141,8 @@
     --ds-size-150: 1rem;
     --ds-size-700: 3.5rem;
 
+    --range-datepicker-month-text: var(--ds-color-text-primary-on-light);
+
   }
 
 
@@ -149,6 +153,12 @@
     --auro-color-background-darker: rgb(218, 212, 190);
     --ds-color-background-darker: rgb(218, 212, 190);
     --auro-color-text-primary-on-dark: #2b2a2b;
+
+    --ds-color-ui-default-default:rgb(218, 212, 190);
+    --ds-color-background-lightest: #2b2a2b;
+    --ds-color-background-darker: rgb(218, 212, 190);
+    --ds-color-text-primary-on-dark: #2b2a2b;
+    --ds-color-text-primary-default:#fff;
     
     --auro-color-ui-hover-on-light: rgb(255, 250, 228);
     --auro-color-ui-active-on-light:rgb(255, 250, 228);
@@ -158,6 +168,7 @@
     --auro-color-border-active-on-light:rgb(255, 250, 228);
     --auro-color-border-primary-on-light:#666;
     --auro-border-radius: 0px;
+
     --ds-color-border-active-on-light:rgb(255, 250, 228);
     --ds-color-border-primary-on-light:#666;
     --ds-border-radius: 0px;
@@ -180,11 +191,12 @@
     --auro-color-background-darker: #e20074;
     --auro-color-text-primary-on-dark: #000;
 
-    --ds-color-ui-default-on-light: #e20074;
+    --ds-color-ui-default-default: #e20074;
     --ds-color-background-lightest: #000;
-    --ds-color-background-darker: #e20074;
-    --ds-color-text-primary-on-dark: #000;
-    
+
+    --ds-color-text-primary-default:#fff; 
+
+   
     --auro-color-ui-hover-on-light: #a7005a;
     --auro-color-ui-active-on-light:#e20074;
     --ds-color-ui-hover-on-light: #a7005a;
