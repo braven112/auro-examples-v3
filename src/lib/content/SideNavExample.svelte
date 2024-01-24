@@ -59,7 +59,7 @@
   @import "../globalGridExamples.css";
   @import "../autoGrid.css";
   .grid-item-leftnav {
-    background: var(--auro-color-brand-neutral-200);
+    background: var(--ds-color-brand-neutral-200);
     padding: 1.5rem;
   }
 

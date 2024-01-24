@@ -650,10 +650,10 @@
   
   /* stylelint-disable-line scss/dollar-variable-first-in-block */
   .fineprint {
-    font-family: var(--auro-font-family-default);
-    font-size: var(--auro-text-body-size-xs);
-    line-height: var(--auro-text-body-height-xs);
-    color: var(--auro-color-text-secondary-on-light);
+    font-family: var(--ds-font-family-default);
+    font-size: var(--ds-text-body-size-xs);
+    line-height: var(--ds-text-body-height-xs);
+    color: var(--ds-color-text-secondary-on-light);
   }
   
   /* --------start headings import ------------- */
@@ -926,18 +926,18 @@
   .util_listNoIndent li::before {
     content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><circle cx='3' cy='5' r='2.75'></circle></svg>");
     display: inline-block;
-    width: var(--auro-size-300);
+    width: var(--ds-size-300);
   }
   
   .util_listIndented {
     padding-left: 0;
     list-style: none;
-    margin-left: calc(var(--auro-size-300) + var(--auro-size-50));
+    margin-left: calc(var(--ds-size-300) + var(--ds-size-50));
   }
   .util_listIndented li::before {
     content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><circle cx='3' cy='5' r='2.75'></circle></svg>");
     display: inline-block;
-    width: var(--auro-size-300);
+    width: var(--ds-size-300);
   }
   
   .util_listNoIndentOrdered {
@@ -948,31 +948,31 @@
   .util_listNoIndentOrdered li::before {
     counter-increment: li-counter;
     content: counter(li-counter) ".";
-    width: var(--auro-size-300);
+    width: var(--ds-size-300);
     display: inline-block;
   }
   
   .util_listIndentedOrdered {
-    padding-left: calc(var(--auro-size-300) + var(--auro-size-50));
+    padding-left: calc(var(--ds-size-300) + var(--ds-size-50));
     list-style: none;
     counter-reset: li-counter;
   }
   .util_listIndentedOrdered li::before {
     counter-increment: li-counter;
     content: counter(li-counter) ".";
-    width: var(--auro-size-300);
+    width: var(--ds-size-300);
     display: inline-block;
   }
   
   .util_listAuroIcon {
-    padding-left: calc(var(--auro-size-300) + var(--auro-size-50));
+    padding-left: calc(var(--ds-size-300) + var(--ds-size-50));
     list-style: none;
   }
   .util_listAuroIcon li {
-    text-indent: calc(var(--auro-size-200) * -1);
+    text-indent: calc(var(--ds-size-200) * -1);
   }
   .util_listAuroIcon auro-icon {
-    width: var(--auro-size-200);
+    width: var(--ds-size-200);
   }
   
   /* --------start utilityClasses/displayProps import ------------- */
@@ -1246,13 +1246,13 @@
   /* --------start blockquote import ------------- */
   blockquote {
     margin-left: 0;
-    border-left: 1px solid var(--auro-color-border-active-on-light);
-    padding: var(--auro-size-100);
-    padding-left: var(--auro-size-400);
-    color: var(--auro-color-text-secondary-on-light);
+    border-left: 1px solid var(--ds-color-border-active-on-light);
+    padding: var(--ds-size-100);
+    padding-left: var(--ds-size-400);
+    color: var(--ds-color-text-secondary-on-light);
     font-weight: 200;
-    margin-top: var(--auro-size-300);
-    margin-bottom: var(--auro-size-300);
+    margin-top: var(--ds-size-300);
+    margin-bottom: var(--ds-size-300);
   }
   blockquote p {
     line-height: 2;
@@ -1261,7 +1261,7 @@
     margin-bottom: 0;
   }
   blockquote + p {
-    margin-bottom: var(--auro-size-400);
+    margin-bottom: var(--ds-size-400);
   }
 
   .merch-container {
@@ -1269,5 +1269,5 @@
     margin-block: var(--ds-size-200);
   }
   auro-sidenavitem::part(link) {
-    padding: calc(var(--auro-size-200) - 2px);
+    padding: calc(var(--ds-size-200) - 2px);
 }

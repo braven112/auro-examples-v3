@@ -17,7 +17,7 @@
       <CityMenuOptions />
     </auro-menu>
   </auro-combobox>
-  <auro-datepicker>
+  <auro-datepicker range>
     <span slot="fromLabel">Departure</span>
     <span slot="toLabel">Return</span>
     <span slot="mobileDateLabel">Roundtrip</span>
@@ -31,7 +31,7 @@
     margin-bottom: var(--auro-size-md);
   }
   .formWrapper {
-    background-color: var(--auro-color-background-lightest);
+    background-color: var(--ds-color-background-lightest);
     display: flex;
     flex-direction: column;
   }
@@ -39,7 +39,7 @@
  
     .formWrapper {
       width: 25rem;
-      background-color: var(--auro-color-background-lightest);
+      background-color: var(--ds-color-background-lightest);
       padding: var(--auro-size-xxl) var(--padding);
       border-radius: 0.25rem;
       display: flex;

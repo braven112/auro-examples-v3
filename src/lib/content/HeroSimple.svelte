@@ -138,7 +138,7 @@
       text-shadow: 1px 1px 5px black;
     }
     .fallback-hero {
-      background-color: var(--auro-color-background-lighter);
+      background-color: var(--ds-color-background-lighter);
     }
   }
   @media screen and (min-width: 1024px) {
