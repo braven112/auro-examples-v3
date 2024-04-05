@@ -8,6 +8,15 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/design-tokens/dist/tokens/CSSCustomProperties.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets/dist/bundled/essentials.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
+		<style>
+			a {
+			text-decoration: underline;
+			color: var(--ds-color-ui-default-default, #0074c8);
+			}
+			a:visited {
+			color: var(--ds-color-ui-default-default, #0074c8);
+			}
+		</style>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -36,7 +45,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-popover/dist/auro-popover__bundled.js" type="module"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-badge/dist/auro-badge__bundled.js" type="module"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-flight/dist/auro-flight__bundled.js" type="module"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@alaskaairux/auro-interruption/dist/auro-dialog__bundled.js" type="module"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-dialog@1.0.7/dist/auro-dialog__bundled.js" type="module"></script>
 			
 		<script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-header/dist/auro-header__bundled.js" type="module"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-hyperlink/dist/auro-hyperlink__bundled.js" type="module"></script>
