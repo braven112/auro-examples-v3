@@ -3,7 +3,7 @@
 </script>
 
 <script>
-  import Article from "$lib/content/Article/Article.svelte";
+  import ArticleFigma from "$lib/content/Article/ArticleFigma.svelte";
   import ArticleData from "$lib/content/Article/Article_Content.json"
 	import Author from "$lib/content/Article/Author.svelte";
 </script>
@@ -15,7 +15,7 @@
 
 <div class="mainContent">
   <div class="articleContainer">
-    <Article></Article>
+    <ArticleFigma></ArticleFigma>
   </div>
   <aside>
     <Author></Author>
