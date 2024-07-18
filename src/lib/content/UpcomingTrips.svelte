@@ -121,7 +121,7 @@
 
   .auro_table tr:nth-child(even),
   .auro-markdown table tr:nth-child(even) {
-    background-color: var(--ds-color-background-secondary-200-default);
+    background-color: var(--ds-color-background-subtle-default);
   }
 
   .auro_table th,
