@@ -173,24 +173,20 @@
 
 <style>
 	:root {
+		--hero-background-color-secondary: var(--ds-color-container-ui-primary-default-inverse);
+    	--hero-background-color-primary: var(--ds-color-background-accent-default);
 		--hero-background-image-sm: radial-gradient(
 			23% 120% at 100% 50%,
-			var(--ds-color-brand-breeze-200) 99.5%,
-			var(--ds-color-background-darkest) 100%
+			var(--hero-background-color-secondary) 99.5%,
+			var(--hero-background-color-primary) 100%
 		);
 		--hero-background-image-md: radial-gradient(
-			23% 120% at 100% 50%,
-			var(--ds-color-brand-breeze-200) 99.5%,
-			var(--ds-color-background-darkest) 100%
+			23% 120% at 100% 50%, var(--hero-background-color-secondary) 99.5%,	var(--hero-background-color-primary) 100%
 		);
-    --hero-background-image-lg: radial-gradient(
-			23% 120% at 100% 50%,
-			var(--ds-color-brand-breeze-200) 99.5%,
-			var(--ds-color-background-darkest) 100%
+    	--hero-background-image-lg: radial-gradient(
+			23% 120% at 100% 50%, var(--hero-background-color-secondary) 99.5%,	var(---hero-background-color-primary) 100%
 		);
-		--hero-background-color-primary: var(--ds-color-background-darkest);
-    --hero-background-color-secondary: var(--ds-color-brand-breeze-200);
-		--hero-text-color-primary: var(--ds-color-text-primary-inverse);
+		--hero-text-color-primary: var(--ds-color-text-primary-default);
 		--hero-padding-md: var(--ds-size-400);
 		--hero-padding-sm: var(--ds-size-100);
 		--hero-font-size-xs: var(--ds-text-body-size-xs);
@@ -202,26 +198,31 @@
 
 	.fallback-hero {
 		background-color: var(--hero-background-color-primary);
-    background-image: linear-gradient(90deg, var(--hero-background-color-primary) 49.9%, var(--hero-background-color-secondary) 50%);
 	}
+	@media screen and (min-width: 1024px) {
+		.fallback-hero {
+			background-image: linear-gradient(90deg, var(--hero-background-color-primary) 49.9%, var(--hero-background-color-secondary) 50%);
+		}
+  }
   	.hero__container {
 		display: grid;
 		max-width: 1232px;
 		margin: auto;
 		padding: var(--padding);
-		grid-template-columns: min-content auto;
+		
 		gap: 3rem;
 		align-items: center;
     
 	}
   @media screen and (min-width: 1024px) {
     .hero__container {
+		grid-template-columns: min-content auto;
       background-image: var(--hero-background-image-md);
     }
   }
   @media screen and (min-width: 1757px) {
     .hero__container {
-      background-image: var(--hero-background-image-lg);
+      background-image: var(--hero-background-image-md);
     }
   }
 

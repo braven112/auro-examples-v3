@@ -58,7 +58,7 @@
 <style>
 	.grid-phones {
 		display: none;
-		background-color: var(--ds-color-background-lighter);
+		background-color: var(--ds-color-background-primary-100-default);
 	}
 	.grid-3col {
 		display: grid;

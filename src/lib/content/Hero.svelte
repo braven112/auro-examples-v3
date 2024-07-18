@@ -147,7 +147,7 @@
       text-shadow: 1px 1px 5px black;
     }
     .fallback-hero {
-      background-color: var(--auro-color-background-lighter);
+      background-color: var(--ds-color-background-primary-100-default);
     }
   }
   .container {

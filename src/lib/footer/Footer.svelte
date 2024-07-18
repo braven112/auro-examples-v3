@@ -279,8 +279,8 @@
 
 <style>
   footer {
-    background-color: var(--auro-color-background-darkest);
-    color: var(--auro-color-text-primary-on-dark);
+    background-color: var(--ds-color-background-primary-100-inverse);
+    color: var(--ds-color-text-primary-inverse);
     font-size: var(--auro-text-body-size-sm);
     /* background-image: url(/src/img/tail.png);
     background-repeat: no-repeat;

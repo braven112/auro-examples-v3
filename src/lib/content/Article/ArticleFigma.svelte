@@ -35,7 +35,7 @@
     color: var(--auro-color-text-secondary-on-light);
   }
   .article_summary {
-    background-color: var(--ds-color-background-lighter);
+    background-color: var(--ds-color-background-primary-100-default);
     padding: var(--article-gap);
     margin-block: var(--article-gap);
     border-left: 8px solid var(--ds-color-background-darker);

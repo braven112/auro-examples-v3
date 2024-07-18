@@ -418,6 +418,15 @@
       <span slot="mobileDateLabel">Roundtrip</span>
     </auro-datepicker>
   </div>
+  <div class="form-groups">
+    <auro-input type="password" required>
+      <span slot="label">Password</span>
+    </auro-input>
+    <auro-input type="password" required bordered>
+      <span slot="label">Password</span>
+      <span slot="helptext">Please enter a secure password.</span>
+    </auro-input>
+  </div>
 </div>
 
 <style>

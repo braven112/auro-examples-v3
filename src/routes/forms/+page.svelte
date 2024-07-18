@@ -25,6 +25,16 @@
     <auro-header display="700">No background</auro-header>
     <FormExamples />
   </div> 
+  <auro-button onClick="toggleDialog('#demo1')">Open Default Dialog</auro-button>
+  <auro-dialog id="demo1">
+    <span slot="header">[header content]</span>
+    <span slot="content">
+      [body content]
+    </span>
+    <span slot="footer">
+      [footer content]
+    </span>
+  </auro-dialog>
 </div>
 
 <style>

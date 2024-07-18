@@ -121,7 +121,7 @@
 
   .auro_table tr:nth-child(even),
   .auro-markdown table tr:nth-child(even) {
-    background-color: var(--ds-color-background-secondary-200-default);
+    background-color: #f8f8f8;
   }
 
   .auro_table th,
@@ -175,4 +175,12 @@
   .upcomingTripFlight {
     width: 100%;
   }
+
+  .container {
+    display: block;
+    max-width: 1232px;
+    margin: auto;
+}
+
+
 </style>

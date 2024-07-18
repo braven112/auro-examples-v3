@@ -2,15 +2,18 @@
 :root {
     --circleSize: 4rem;
     --circlePosition:-.5rem;
+    
  }
  
  .merch[data-variant="3"] {
     display: grid;
-    background-color: var(--ds-color-background-lighter);
+    background-color: var(--ds-color-background-primary-100-default);
+    color: var(--ds-color-text-primary-default);
     border-radius: 5px;
     overflow: hidden;
     text-wrap: balance; /* Progressive enhancement to make text wrapping better */
     padding: var(--ds-size-200);
+    /* --ds-auro-icon-color: var(--ds-color-icon-primary-inverse) !important; */
 
 }
 .merch[data-variant="3"] .merch__img {
@@ -49,6 +52,7 @@
 .merch[data-variant="3"] .product__offer {
     font-family: "Bebas Neue";
     font-size: 1.25rem;
+    
 }
 .merch[data-variant="3"] .product__offer-detail {
     font-size: var(--ds-text-body-size-xs);
@@ -101,8 +105,8 @@
     .merch[data-variant="3"] {
         grid-template-columns: min-content auto;
         gap: var(--ds-size-600);
-        background-color: var(--ds-color-background-lightest);
-        border: 2px solid var(--ds-color-background-lighter);
+        background-color: var(---ds-color-background-primary-200-default);
+        border: 2px solid var(--ds-color-background-primary-100-default);
         
     }
     .merch[data-variant="3"] .merch__content {
@@ -111,8 +115,8 @@
 }
 @container (min-width: 620px) {
     .merch[data-variant="3"] {
-        background-color: var(--ds-color-background-lighter);
-        border: 2px solid var(--ds-color-background-lightest);
+        background-color: var(--ds-color-background-primary-100-default);
+        border: 2px solid var(--ds-color-background-primary-200-default);
     }
     .merch[data-variant="3"] .product__graphic-wrapper {
         display: block;

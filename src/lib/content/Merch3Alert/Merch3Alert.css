@@ -9,6 +9,7 @@
 
 .merchAlert[data-variant="3"] {
     background-color: var(--ds-color-brand-tropical-200);
+    color: var(--ds-color-text-primary-default);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: bottom right;

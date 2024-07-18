@@ -31,7 +31,7 @@
     margin-bottom: var(--auro-size-md);
   }
   .formWrapper {
-    background-color: var(--ds-color-background-lightest);
+    background-color: var(--ds-color-container-primary-default);
     display: flex;
     flex-direction: column;
   }
@@ -39,7 +39,7 @@
  
     .formWrapper {
       width: 25rem;
-      background-color: var(--ds-color-background-lightest);
+      background-color: var(--ds-color-container-primary-default);
       padding: var(--auro-size-xxl) var(--padding);
       border-radius: 0.25rem;
       display: flex;
