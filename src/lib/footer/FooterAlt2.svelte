@@ -132,7 +132,7 @@
         <auro-hyperlink ondark nav href="https://www.alaskaair.com"
           ><auro-icon
             customColor
-            style="color: var(--auro-color-ui-default-on-dark)"
+            style="color: var(--ds-color-ui-default-inverse)"
             category="interface"
             name="mail"
           /> Sign up now</auro-hyperlink
@@ -143,7 +143,7 @@
         <auro-hyperlink ondark nav href="https://www.alaskaair.com"
           ><auro-icon
             customColor
-            style="color: var(--auro-color-ui-default-on-dark)"
+            style="color: var(--ds-color-ui-default-inverse)"
             category="interface"
             name="chat"
           /> Give feedback</auro-hyperlink
@@ -154,7 +154,7 @@
         <auro-hyperlink ondark nav href="https://www.alaskaair.com"
           ><auro-icon
             customColor
-            style="color: var(--auro-color-ui-default-on-dark)"
+            style="color: var(--ds-color-ui-default-inverse)"
             category="interface"
             name="phone"
           /> Get the app</auro-hyperlink
@@ -165,7 +165,7 @@
         <auro-hyperlink ondark nav href="https://www.alaskaair.com"
           ><auro-icon
             customColor
-            style="color: var(--auro-color-ui-default-on-dark)"
+            style="color: var(--ds-color-ui-default-inverse)"
             category="payment"
             name="credit-card"
           /> Apply now</auro-hyperlink

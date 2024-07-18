@@ -292,7 +292,7 @@
     display: block;
   }
   .social-circle {
-    background: var(--auro-color-ui-default-on-dark);
+    background: var(--ds-color-ui-default-inverse);
     border-radius: 50%;
     height: var(--auro-size-xl);
     width: var(--auro-size-xl);
