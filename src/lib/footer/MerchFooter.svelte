@@ -16,7 +16,7 @@ import card from '$lib/images/card.png';
 
 <style>
   .footer-merch-background {
-    background: var(--ds-color-background-primary-100-default);
+    background: var(--ds-color-background-primary-200-default);
   }
   .footer-merch-containers {
     display: grid;

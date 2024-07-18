@@ -594,12 +594,13 @@
   body,
   .baseType {
     margin: 0;
-    color: #222222;
+    color: var(--ds-color-text-primary-default);
     font-family: "AS Circular", Helvetica Neue, Arial, sans-serif;
     font-variant-ligatures: no-common-ligatures;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
+    background-color: var(--ds-color-background-primary-100-default);
   }
   
   .baseParagraph {
@@ -612,10 +613,10 @@
   
   .hyperlink {
     text-decoration: underline;
-    color: #0074c8;
+    color: var(--ds-color-ui-default-default);
   }
   .hyperlink:visited {
-    color: #0074c8;
+    color: var(--ds-color-ui-default-default);
   }
   .hyperlink--nav {
     display: block;
@@ -625,17 +626,17 @@
     text-decoration: underline !important;
   }
   .hyperlink--ondark {
-    color: #00cff0;
+    color: var(--ds-color-ui-default-inverse);
   }
   .hyperlink--ondark:not(.is-touching):hover {
-    color: #5de3f7;
+    color: var(--ds-color-ui-hover-inverse);
   }
   .hyperlink--ondark:visited {
-    color: #00cff0;
+    color: var(--ds-color-ui-default-inverse);
   }
   .hyperlink:not(.is-touching):hover {
     text-decoration: none;
-    color: #054687;
+    color: var(--ds-color-ui-hover-default);
   }
   
   img {
@@ -1114,7 +1115,7 @@
     display: inline-block;
     padding: 0 1rem;
     text-decoration: none;
-    color: #0074c8;
+    color: var(--ds-color-ui-default-default);
     border: 1px solid transparent;
     line-height: 3;
   }
@@ -1122,30 +1123,30 @@
     .auro_roleButton:hover {
       cursor: pointer;
       text-decoration: underline;
-      color: #054687;
+      color: var(--ds-color-ui-hover-default);
     }
   }
   
   /* --------start componentSupport/anchor-roleTab import ------------- */
   .auro_roleTab {
     padding: 1rem;
-    color: #0074c8;
+    color: var(--ds-color-ui-default-default);
     border-width: 0 0 1px;
     border-style: solid;
-    border-color: #626b79;
+    border-color: var(--ds-color-border-ui-default-default);
     margin-right: calc(0.25rem * -1);
   }
   .auro_roleTab:not(.is-touching):hover {
     cursor: pointer;
     text-decoration: none;
-    color: #054687;
+    color: var(--ds-color-ui-hover-default);
     border-width: 0 0 2px;
     border-color: currentColor;
   }
   .auro_roleTab.is-active {
     cursor: pointer;
     text-decoration: none;
-    color: #222222;
+    color: var(--ds-color-text-primary-default);
     border-width: 0 0 2px;
     border-color: currentColor;
   }
@@ -1183,7 +1184,7 @@
     white-space: nowrap;
     border-width: 0 0 1px;
     border-style: solid;
-    border-color: #626b79;
+    border-color: var(--ds-color-border-ui-default-default);
     line-height: 3rem;
   }
   @media screen and (min-width: 660px) {
