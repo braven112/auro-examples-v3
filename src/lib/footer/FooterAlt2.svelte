@@ -397,7 +397,7 @@
       grid-template-columns: 130px 145px 130px 150px;
     }
     .important-group {
-      border-right: 1px solid var(--auro-color-ui-default-on-dark);
+      border-right: 1px solid var(--ds-color-ui-default-inverse);
     }
 
     .important-group:last-child {
@@ -409,7 +409,7 @@
     display: block;
   }
   .social-circle {
-    background: var(--auro-color-ui-default-on-dark);
+    background: var(--ds-color-ui-default-inverse);
     border-radius: 50%;
     height: var(--auro-size-xl);
     width: var(--auro-size-xl);
