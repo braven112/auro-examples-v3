@@ -156,7 +156,6 @@
 				<p class="hero__headline hero__headline-lg">{campaign.headlineLg}</p>
 				<!--CTA-->
 				<auro-hyperlink
-					ondark
 					class="hero__cta-lg"
 					data-type="standard"
 					type="cta"
