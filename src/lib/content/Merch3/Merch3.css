@@ -105,7 +105,7 @@
     .merch[data-variant="3"] {
         grid-template-columns: min-content auto;
         gap: var(--ds-size-600);
-        background-color: var(--ds-color-background-primary-100-default);
+        background-color: var(--ds-color-container-primary-default);
         border: 2px solid var(--ds-color-border-subtle-default);
         
     }
@@ -115,7 +115,7 @@
 }
 @container (min-width: 620px) {
     .merch[data-variant="3"] {
-        background-color: var(--ds-color-background-primary-100-default);
+        background-color: var(--ds-color-container-primary-default);
         border: 2px solid var(--ds-color-border-subtle-default);
     }
     .merch[data-variant="3"] .product__graphic-wrapper {

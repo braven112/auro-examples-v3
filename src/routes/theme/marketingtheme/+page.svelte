@@ -100,8 +100,8 @@
 	}
 }
 
-	.from-bg {
-		background-color: #eee;
+	.form-bg {
+		background-color: var(--ds-color-background-primary-300-default);
 	}
 
 
