@@ -39,7 +39,7 @@
     position: absolute;
     top: var(--circlePosition);
     left: var(--circlePosition);
-    background-color: var(--ds-color-brand-tropical-200);
+    background-color: var(--ds-color-container-accent-inverse);
     border-radius: 50%;
     display: inline-grid;
     height: var(--circleSize);
