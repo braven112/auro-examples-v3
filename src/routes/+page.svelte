@@ -1,6 +1,7 @@
 <script>
 	import Badges from '$lib/content/Badges.svelte';
 	import BreadcrumbExample from '$lib/content/BreadcrumbExample.svelte';
+	import Carousel from '$lib/content/carousel.svelte';
 	import Hero from '$lib/content/HeroCC.svelte';
 	import Merch3 from '$lib/content/Merch3/Merch3.svelte';
 	import Merch3Alert from '$lib/content/Merch3Alert/Merch3Alert.svelte';
@@ -43,6 +44,11 @@
 <section>
 	<div class="homeContainer">
 		<UpcomingTrips />
+	</div>
+</section>
+<section>
+	<div class="homeContainer">
+		<Carousel />
 	</div>
 </section>
 
