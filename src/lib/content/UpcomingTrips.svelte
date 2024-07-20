@@ -12,16 +12,31 @@
         <auro-header level="6" margin="top" size="none" display="300">
           <auro-datetime type="date" month="short" weekday="short" />
         </auro-header>
-        <auro-flight flights='["AS 333"]' duration="2h 05m" departureTime="6:50 am" departureStation="PSP" arrivalTime="8:55 am" arrivalStation="SEA">
-          <auro-flightline />
-        </auro-flight>
+        <auro-flight
+  flights='["AS 161", "AA 2269"]'
+  duration="704"
+  departureTime="2022-07-21T00:55:00-09:00"
+  departureStation="ANC"
+  arrivalTime="2022-07-21T16:39:00-04:00"
+  arrivalStation="BOS"
+  >
+  <auro-flightline>
+    <auro-flight-segment iata="ORD" duration="3h 10m"></auro-flight-segment>
+  </auro-flightline>
+  <span slot="footer">
+    <auro-icon category="logos" name="tail-AS" style="width: 24px" aria-hidden="true"></auro-icon>
+    AS161 is subject to government approval <br aria-hidden="true"/>
+    <auro-icon category="logos" name="tail-AA" style="width: 24px" aria-hidden="true"></auro-icon>
+    AA2269 is operated by American Airlines
+  </span>
+</auro-flight>
       </td>
       <td class="upcomingTripFlightDetails">
         <div class="upcomingTripDetails">
           <div class="upcomingTripTravelers">2 travelers</div>
 
           <div class="upcomingTripPriority">
-            <auro-button onClick="toggleInterruption('#priority')" secondary>Priority: E1Y.14</auro-button>
+            <auro-button slim secondary>Priority: E1Y.14</auro-button>
           </div>
 
           <div class="upcomingTripType fineprint">Pleasure Space Available (Coach)</div>
@@ -29,22 +44,33 @@
       </td>
       <td class="upcomingTripConfirmation">qwerty</td>
       <td class="upcomingTripCancel">
-        <auro-button tertiary>Cancel</auro-button>
+        <auro-button tertiary slim>Cancel</auro-button>
       </td>
     </tr>
     <tr>
       <td class="upcomingTripFlight">
         <auro-header level="6" margin="top" size="none" display="300">Mon, July 4, 2022</auro-header>
-        <auro-flight flights='["AS 880"]' duration="5h 45m" daysChanged="1" departureTime="10:50 pm" departureStation="KOA" arrivalTime="6:35 am" ArrivalStation="SEA">
-          <auro-flightline />
-        </auro-flight>
+        <auro-flight
+        flights='["AS 65"]'
+        duration="353"
+        departureTime="2025-05-04T00:00:00-09:00"
+        departureStation="KTN"
+        arrivalTime="2025-05-04T05:53:00-09:00"
+        arrivalStation="ANC"    
+        >
+        <auro-flightline>
+          <auro-flight-segment stopover iata="WRG"></auro-flight-segment>
+          <auro-flight-segment stopover iata="PSG"></auro-flight-segment>
+          <auro-flight-segment stopover iata="JNU"></auro-flight-segment>
+        </auro-flightline>
+      </auro-flight>
       </td>
       <td class="upcomingTripFlightDetails">
         <div class="upcomingTripDetails">
           <div class="upcomingTripTravelers">1 travelers</div>
 
           <div class="upcomingTripPriority">
-            <auro-button onClick="toggleInterruption('#priority')" secondary>Priority: E1Y.14</auro-button>
+            <auro-button slim secondary>Priority: E1Y.14</auro-button>
           </div>
 
           <div class="upcomingTripType fineprint">Pleasure Space Available (Coach)</div>
@@ -58,7 +84,14 @@
     <tr>
       <td class="upcomingTripFlight">
         <auro-header level="6" margin="top" size="none" display="300">Sun, April 4, 2022</auro-header>
-        <auro-flight flights='["AS 110", "AS 12"]' duration="11h 5m" daysChanged="0" departureTime="12:45 am" departureStation="ANC" arrivalTime="3:50 pm" ArrivalStation="BOS">
+        <auro-flight
+        flights='["AS 65"]'
+        duration="353"
+        departureTime="2025-05-04T00:00:00-09:00"
+        departureStation="KTN"
+        arrivalTime="2025-05-04T05:59:00-09:00"
+        arrivalStation="ANC"    
+        >
           <auro-flightline>
             <auro-flight-segment iata="SEA" duration="1h 35m" />
           </auro-flightline>
@@ -72,17 +105,35 @@
         <div class="upcomingTripDetails">
           <div class="upcomingTripTravelers">4 travelers</div>
           <div class="upcomingTripPriority">
-            <auro-button onClick="toggleInterruption('#priority')" secondary>Priority: E1Y.14</auro-button>
+            <auro-button slim secondary>Priority: E1Y.14</auro-button>
           </div>
           <div class="upcomingTripType fineprint">Pleasure Space Available (Coach)</div>
         </div>
       </td>
       <td class="upcomingTripConfirmation">zxcvsa</td>
       <td class="upcomingTripCancel">
-        <auro-button tertiary>Cancel</auro-button>
+        <auro-button tertiary slim>Cancel</auro-button>
       </td>
     </tr>
   </table>
+  <auro-flight
+      flights='["AS 65"]'
+      duration="353"
+      departureTime="2025-05-04T00:00:00-09:00"
+      departureStation="KTN"
+      arrivalTime="2025-05-04T05:53:00-09:00"
+      arrivalStation="ANC"    
+      >
+      <auro-flightline>
+        <auro-flight-segment stopover iata="WRG"></auro-flight-segment>
+        <auro-flight-segment stopover iata="PSG"></auro-flight-segment>
+        <auro-flight-segment stopover iata="JNU"></auro-flight-segment>
+      </auro-flightline>
+      <span slot="footer">
+        <auro-icon category="logos" name="tail-HA" style="width: 24px" />
+        HA110 is subject to government approval <br />
+      </span>
+    </auro-flight>
 </div>
 
 <style>
@@ -176,3 +227,4 @@
     width: 100%;
   }
 </style>
+
