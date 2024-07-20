@@ -1,4 +1,5 @@
 <script>
+	import Badges from '$lib/content/Badges.svelte';
 	import BreadcrumbExample from '$lib/content/BreadcrumbExample.svelte';
 	import Hero from '$lib/content/HeroCC.svelte';
 	import Merch3 from '$lib/content/Merch3/Merch3.svelte';
@@ -32,6 +33,11 @@
 <section>
 	<div class="homeContainer">
 		<Merch4 />
+	</div>
+</section>
+<section>
+	<div class="homeContainer">
+		<Badges />
 	</div>
 </section>
 <section>
