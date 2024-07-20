@@ -10,7 +10,7 @@
     --merch4-font-size-xs: var(--ds-text-body-size-xs);
     --merch4-font-size-sm:var(--ds-size-300);
     --merch4-font-size-md:var(--ds-size-400);
-    --merch4-font-size-xs-color: #838d9c;
+    --merch4-font-size-xs-color: var(--ds-color-text-secondary-inverse);
     --merch4-font-family-accent: 'Bebas Neue';
     --merch4-image-column-size-lg: 45%;
     --merch4-background-shape: 50%;
