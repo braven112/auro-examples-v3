@@ -230,11 +230,6 @@
 			margin: 0vw auto;
 		}
 	}
-	@media screen and (min-width: 2048px) {
-		.hero__container {
-			margin: 3vw auto;
-		}
-	}
 	.hero__container {
 		display: grid;
 	}
